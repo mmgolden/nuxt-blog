@@ -5,4 +5,19 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt"
   ],
+
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en"
+      },
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "favicon.png"
+        }
+      ],
+    }
+  },
 });
