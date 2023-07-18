@@ -24,7 +24,7 @@
           :key="item.name"
           :href="item.href"
           target="_blank"
-          class="text-gray-900 hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
+          class="text-gray-900 hover:text-gray-600 dark:text-white dark:hover:text-gray-300 rounded-md"
         >
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/" class="flex items-center -m-1.5 p-1.5">
+  <NuxtLink to="/" class="flex items-center -m-1.5 p-1.5 rounded-md">
     <img
       class="h-6 w-auto"
       src="~/assets/svg/logo.svg"

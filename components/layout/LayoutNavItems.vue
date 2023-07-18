@@ -4,7 +4,7 @@
     :key="item.name"
     :to="item.href"
     v-bind="$attrs"
-    class="text-base leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+    class="text-base leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white rounded-md"
   >
     {{ item.name }}
   </NuxtLink>
