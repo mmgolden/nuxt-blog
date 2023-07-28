@@ -3,7 +3,7 @@
     v-model="isDarkTheme"
     :class="[
       isDarkTheme ? 'bg-gray-700' : 'bg-gray-200',
-      'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2'
+      'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out'
     ]"
   >
     <span class="sr-only">Switch theme</span>
