@@ -1,5 +1,9 @@
 <template>
-  <NuxtLink to="/" class="flex items-center -m-1.5 p-1.5 rounded-md">
+  <NuxtLink
+    to="/"
+    class="flex items-center -m-1.5 p-1.5 rounded-md"
+    @click="click"
+  >
     <img
       class="h-6 w-auto"
       src="~/assets/svg/logo.svg"
@@ -11,6 +15,10 @@
   </NuxtLink>
 </template>
 
-<script setup></script>
+<script setup>
+const emit = defineEmits(["click"]);
+
+const click = () => emit("click");
+</script>
 
 <style lang="scss" scoped></style>

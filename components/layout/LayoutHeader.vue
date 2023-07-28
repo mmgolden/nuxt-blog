@@ -34,11 +34,11 @@
     >
       <div class="fixed inset-0 z-10" />
       <DialogPanel
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-white/10"
+        class="bg-white dark:bg-gray-900 fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-white/10"
       >
         <div class="flex items-center justify-between">
           <!-- Logo -->
-          <LayoutLogo />
+          <LayoutLogo @click="mobileMenuOpen = false" />
 
           <!-- Mobile menu button -->
           <button
@@ -58,6 +58,7 @@
               <LayoutNavItems
                 :navigation="navigation"
                 class="-mx-3 block rounded-lg px-3 py-2"
+                @click="mobileMenuOpen = false"
               />
             </div>
           </div>
