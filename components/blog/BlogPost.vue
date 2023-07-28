@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col items-start justify-between">
+  <article class="flex flex-col items-start justify-between" v-bind="$attrs">
     <div class="flex items-center gap-x-4 text-sm">
       <!-- Date -->
       <time :datetime="post.date" class="text-gray-500 dark:text-gray-300">
