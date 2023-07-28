@@ -5,13 +5,28 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-white;
+  }
+
+  html.dark {
+    @apply bg-gray-900;
+  }
+
   html,
   body {
     font-family: "Roboto", sans-serif;
   }
 
+  a,
+  button {
+    @apply border-[2px];
+    @apply border-transparent;
+  }
+
   a:focus-visible,
   button:focus-visible {
-    outline: 2px solid #06b6d4;
+    @apply outline-none;
+    @apply border-cyan-500;
   }
 }
