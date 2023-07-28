@@ -20,13 +20,52 @@
 
   a,
   button {
-    @apply border-[2px];
-    @apply border-transparent;
+    @apply border-[2px] border-transparent;
   }
 
   a:focus-visible,
   button:focus-visible {
-    @apply outline-none;
-    @apply border-cyan-500;
+    @apply outline-none border-cyan-500;
+  }
+
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    @apply text-gray-900 dark:text-white mb-4 pt-4 first:pt-0;
+  }
+
+  .content h1 {
+    @apply text-4xl lg:text-5xl font-semibold;
+  }
+
+  .content h2 {
+    @apply text-3xl lg:text-4xl font-semibold;
+  }
+
+  .content h3 {
+    @apply text-2xl lg:text-3xl font-semibold;
+  }
+
+  .content h4 {
+    @apply text-xl lg:text-2xl font-semibold;
+  }
+
+  .content h5 {
+    @apply text-lg lg:text-xl font-semibold;
+  }
+
+  .content h6 {
+    @apply text-lg font-semibold;
+  }
+
+  .content p {
+    @apply leading-loose text-lg mb-8 text-gray-600 dark:text-gray-300; 
+  }
+
+  .content blockquote {
+    @apply pl-4 border-l-2 border-gray-600 dark:border-gray-300;
   }
 }
