@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto max-w-4xl p-6 lg:px-8">
+  <div class="mx-auto max-w-4xl pt-8 pb-20 lg:px-8">
     <img
-      class="h-28 w-auto rounded-full mt-8 mb-8"
+      class="h-28 w-auto rounded-full mb-8"
       src="~/assets/png/avatar.png"
       alt="Headshot of Melinda Golden"
     />
