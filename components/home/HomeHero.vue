@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-4xl pt-8 pb-20 lg:px-8">
     <nuxt-img
       class="h-28 w-auto rounded-full mb-8"
-      src="~/assets/png/avatar.png"
+      src="/png/avatar.png"
       alt="Headshot of Melinda Golden"
     />
     <h1 class="text-5xl font-bold mb-4 text-gray-900 dark:text-white">

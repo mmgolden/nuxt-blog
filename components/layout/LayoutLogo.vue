@@ -6,7 +6,7 @@
   >
     <nuxt-img
       class="h-6 w-auto"
-      src="~/assets/svg/logo.svg"
+      src="/svg/logo.svg"
       alt="Melinda Golden Logo"
     />
     <span class="ml-2 text-base font-bold text-gray-900 dark:text-white">
