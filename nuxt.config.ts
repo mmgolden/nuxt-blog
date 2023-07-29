@@ -21,4 +21,10 @@ export default defineNuxtConfig({
       ],
     }
   },
+
+  runtimeConfig: {
+    public: {
+      formId: process.env.NUXT_FORM_ID,
+    }
+  },
 });

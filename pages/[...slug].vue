@@ -8,7 +8,7 @@
     </Head>
 
     <article
-      class="mx-auto max-w-4xl px-6 lg:px-8 pt-16 pb-24 sm:pt-20 sm:pb-32"
+      class="mx-auto max-w-4xl px-6 lg:px-8 pt-16 pb-16 sm:pt-20 sm:pb-20"
     >
       <BlogTitle>
         <template #title> {{ post.title }} </template>
@@ -26,6 +26,8 @@
       </BlogTitle>
 
       <ContentDoc class="content" />
+
+      <BlogNewsletter />
     </article>
   </main>
 </template>

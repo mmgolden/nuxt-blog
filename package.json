@@ -19,6 +19,7 @@
     "@typescript-eslint/parser": "^5.62.0",
     "@vueuse/core": "^10.2.1",
     "@vueuse/nuxt": "^10.2.1",
+    "convertkit-vue": "^1.0.6",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",

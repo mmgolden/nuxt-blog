@@ -28,6 +28,18 @@
     @apply outline-none border-cyan-500;
   }
 
+  .newsletter form {
+    @apply flex flex-col md:flex-row gap-x-4;
+  }
+
+  .newsletter input {
+    @apply mb-4 md:mb-0 min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-800 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 dark:focus:ring-cyan-500 sm:text-sm sm:leading-6;
+  }
+
+  .newsletter button {
+    @apply flex-none rounded-md bg-gray-900 hover:bg-gray-600 dark:bg-white dark:hover:bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-white dark:text-gray-900 shadow-sm;
+  }
+
   .content h1,
   .content h2,
   .content h3,
