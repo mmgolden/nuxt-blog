@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-4xl pt-8 pb-20 lg:px-8">
-    <img
+    <nuxt-img
       class="h-28 w-auto rounded-full mb-8"
       src="~/assets/png/avatar.png"
       alt="Headshot of Melinda Golden"

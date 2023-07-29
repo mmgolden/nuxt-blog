@@ -4,7 +4,7 @@
     class="flex items-center -m-1.5 p-1.5 rounded-md"
     @click="click"
   >
-    <img
+    <nuxt-img
       class="h-6 w-auto"
       src="~/assets/svg/logo.svg"
       alt="Melinda Golden Logo"
