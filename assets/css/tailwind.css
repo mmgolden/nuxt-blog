@@ -40,6 +40,10 @@
     @apply flex-none rounded-md bg-neutral-900 hover:bg-neutral-600 dark:bg-white dark:hover:bg-neutral-200 px-3.5 py-2.5 text-sm font-semibold text-white dark:text-neutral-900 shadow-sm;
   }
 
+  .content a {
+    @apply text-neutral-900 dark:text-white underline;
+  }
+
   .content h1,
   .content h2,
   .content h3,
@@ -47,6 +51,15 @@
   .content h5,
   .content h6 {
     @apply text-neutral-900 dark:text-white mb-4 pt-4 first:pt-0;
+  }
+
+  .content h1 a,
+  .content h2 a,
+  .content h3 a, 
+  .content h4 a,
+  .content h5 a,
+  .content h6 a {
+    @apply no-underline;
   }
 
   .content h1 {
@@ -79,5 +92,30 @@
 
   .content blockquote {
     @apply pl-4 border-l-2 border-neutral-600 dark:border-neutral-300;
+  }
+
+  .content ol,
+  .content ul {
+    @apply mb-8;
+  }
+
+  .content li {
+    @apply text-neutral-600 dark:text-neutral-300 mb-2;
+  }
+
+  .content ol {
+    @apply list-decimal pl-4;
+  }
+
+  .content ul {
+    @apply list-disc pl-4;
+  }
+
+  .content pre {
+    @apply mb-8 bg-neutral-50 dark:bg-neutral-800 p-4 rounded-sm;
+  }
+
+  .content p code {
+    @apply bg-neutral-50 dark:bg-neutral-800 px-2 py-1 rounded-sm;
   }
 }

@@ -27,4 +27,13 @@ export default defineNuxtConfig({
       formId: process.env.NUXT_FORM_ID,
     }
   },
+
+  content: {
+    highlight: {
+      theme: {
+        default: "light-plus",
+        dark: "dark-plus" ,
+      }
+    }
+  }
 });
