@@ -1,9 +1,14 @@
 ---
-title: "How I went from photographer to software developer"
-date: "2022-11-19T09:00:00-05:00"
-description: "Fortunately for me, software development is one of those fields where your college degree doesn’t matter much. All that matters are your skills. I thought I would focus on graphic design when considering my college major. I have always had a natural talent for creating art."
+title: How I went from photographer to software developer
+date: 2022-11-19T14:00:00.000Z
+description: >-
+  Fortunately for me, software development is one of those fields where your
+  college degree doesn’t matter much. All that matters are your skills. I
+  thought I would focus on graphic design when considering my college major. I
+  have always had a natural talent for creating art.
 tags:
   - career
+draft: false
 ---
 
 Fortunately for me, software development is one of those fields where your college degree doesn’t matter much. All that matters are your skills. I thought I would focus on graphic design when considering my college major. I have always had a natural talent for creating art.

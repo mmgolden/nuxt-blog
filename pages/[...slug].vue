@@ -3,7 +3,11 @@
     <!-- Meta -->
     <Head>
       <Title>{{ post.title }}</Title>
-      <Meta name="description" :content="post.description" />
+      <Meta
+        v-if="post.description"
+        name="description"
+        :content="post.description"
+      />
       <Link rel="canonical" :href="`https://melindagolden.com${path}`" />
     </Head>
 
@@ -13,7 +17,7 @@
       <BlogTitle>
         <template #title> {{ post.title }} </template>
         <template #date> {{ formatDate(post.date) }}</template>
-        <template #tags>
+        <template v-if="post.tags && post.tags.length > 0" #tags>
           <NuxtLink
             v-for="tag in post.tags"
             :key="tag"

@@ -10,14 +10,16 @@
       </time>
 
       <!-- Tags -->
-      <NuxtLink
-        v-for="tag in post.tags"
-        :key="tag"
-        to="/"
-        class="block rounded-full max-w-fit"
-      >
-        <BaseTag>{{ tag }}</BaseTag>
-      </NuxtLink>
+      <div v-if="post.tags && post.tags.length > 0">
+        <NuxtLink
+          v-for="tag in post.tags"
+          :key="tag"
+          to="/"
+          class="block rounded-full max-w-fit"
+        >
+          <BaseTag>{{ tag }}</BaseTag>
+        </NuxtLink>
+      </div>
     </div>
 
     <div class="group relative">
@@ -33,6 +35,7 @@
 
       <!-- Description -->
       <p
+        v-if="post.description"
         class="mt-5 line-clamp-3 text-base leading-8 text-neutral-600 dark:text-neutral-300"
       >
         {{ post.description }}

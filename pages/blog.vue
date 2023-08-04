@@ -29,7 +29,10 @@
 
 <script setup>
 const { data: posts } = await useAsyncData("blog", () => {
-  return queryContent("/").sort({ date: -1 }).find();
+  return queryContent("/")
+    .where({ draft: { $eq: false } })
+    .sort({ date: -1 })
+    .find();
 });
 </script>
 
