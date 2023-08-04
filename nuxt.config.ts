@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
-    "@vueuse/nuxt"
+    "@vueuse/nuxt",
+    "@nuxt/image"
   ],
 
   app: {
@@ -15,9 +16,24 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          href: "favicon.png"
+          href: "/png/favicon.png"
         }
       ],
     }
   },
+
+  runtimeConfig: {
+    public: {
+      formId: process.env.NUXT_FORM_ID,
+    }
+  },
+
+  content: {
+    highlight: {
+      theme: {
+        default: "light-plus",
+        dark: "dark-plus" ,
+      }
+    }
+  }
 });

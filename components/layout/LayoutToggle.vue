@@ -2,8 +2,8 @@
   <Switch
     v-model="isDarkTheme"
     :class="[
-      isDarkTheme ? 'bg-gray-700' : 'bg-gray-200',
-      'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2'
+      isDarkTheme ? 'bg-neutral-700' : 'bg-neutral-200',
+      'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out'
     ]"
   >
     <span class="sr-only">Switch theme</span>
@@ -29,7 +29,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="h-3 w-3 text-gray-900"
+          class="h-3 w-3 text-neutral-900"
         >
           <path
             stroke-linecap="round"
@@ -45,7 +45,7 @@
           isDarkTheme
             ? 'opacity-100 duration-200 ease-in'
             : 'opacity-0 duration-100 ease-out',
-          'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity bg-gray-900 rounded-full'
+          'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity bg-neutral-900 rounded-full'
         ]"
         aria-hidden="true"
       >

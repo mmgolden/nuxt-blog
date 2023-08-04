@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col h-screen bg-white dark:bg-gray-900">
+  <div class="flex flex-col h-screen">
     <LayoutHeader />
-    <main>
+    <main class="pt-16">
       <slot />
     </main>
     <LayoutFooter />
