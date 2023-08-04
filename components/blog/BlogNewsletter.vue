@@ -19,10 +19,9 @@
         <p
           class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2"
         >
-          I’m a software developer based in Asheville, NC. I have 7+ years of
-          experience in front-end development and use HTML, CSS, JavaScript,
-          TypeScript, and Vue. Find out when I publish new content by
-          subscribing to my newsletter.
+          Hi there! I'm Melinda Golden, a software developer based in Asheville,
+          NC. I have over seven years of experience in front-end development.
+          Stay updated on my latest content by signing up for my newsletter.
         </p>
       </div>
     </div>
