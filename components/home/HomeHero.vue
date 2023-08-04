@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-4xl pt-8 pb-20 lg:px-8">
+  <div class="mx-auto max-w-4xl pt-8 pb-20 px-4 lg:px-8">
     <nuxt-img
       class="h-28 w-auto rounded-full mb-8"
       src="/png/avatar.png"

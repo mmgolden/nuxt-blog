@@ -87,7 +87,7 @@
   }
 
   .content p {
-    @apply leading-loose text-lg mb-8 text-neutral-600 dark:text-neutral-300; 
+    @apply leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-600 dark:text-neutral-300; 
   }
 
   .content blockquote {

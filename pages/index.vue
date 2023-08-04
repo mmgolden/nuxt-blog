@@ -11,6 +11,8 @@
     </Head>
 
     <HomeHero />
+
+    <HomePosts />
   </div>
 </template>
 
