@@ -11,7 +11,7 @@
       <div class="flex lg:hidden">
         <button
           type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900 dark:text-white"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-900 dark:text-white"
           @click="mobileMenuOpen = true"
         >
           <span class="sr-only">Open main menu</span>
@@ -34,7 +34,7 @@
     >
       <div class="fixed inset-0 z-10" />
       <DialogPanel
-        class="bg-white dark:bg-gray-900 fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-white/10"
+        class="bg-white dark:bg-neutral-900 fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
       >
         <div class="flex items-center justify-between">
           <!-- Logo -->
@@ -43,7 +43,7 @@
           <!-- Mobile menu button -->
           <button
             type="button"
-            class="-m-2.5 rounded-md p-2.5 text-gray-900 dark:text-white"
+            class="-m-2.5 rounded-md p-2.5 text-neutral-900 dark:text-white"
             @click="mobileMenuOpen = false"
           >
             <span class="sr-only">Close menu</span>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="-my-6 divide-y divide-neutral-500/10">
             <!-- Nav items -->
             <div class="space-y-2 py-6">
               <LayoutNavItems
@@ -78,9 +78,9 @@ import { NAVIGATION } from "@/constants/navigation";
 const { y } = useWindowScroll();
 
 const headerClass =
-  "z-50 bg-white dark:bg-gray-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-white dark:border-b-gray-900";
+  "z-50 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-white dark:border-b-neutral-900";
 const borderClass =
-  "z-50 bg-white dark:bg-gray-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-gray-200 dark:border-b-gray-800";
+  "z-50 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-neutral-200 dark:border-b-neutral-800";
 
 const navigation = [
   { name: "About", href: NAVIGATION.ABOUT },

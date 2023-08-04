@@ -4,7 +4,7 @@
     :key="item.name"
     :to="item.href"
     v-bind="$attrs"
-    class="text-base leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white rounded-md"
+    class="text-base leading-6 text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white rounded-md"
     @click="click"
   >
     {{ item.name }}

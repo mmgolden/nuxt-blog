@@ -10,7 +10,7 @@
   }
 
   html.dark {
-    @apply bg-gray-900;
+    @apply bg-neutral-900;
   }
 
   html,
@@ -33,11 +33,11 @@
   }
 
   .newsletter input {
-    @apply mb-4 md:mb-0 min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-800 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 dark:focus:ring-cyan-500 sm:text-sm sm:leading-6;
+    @apply mb-4 md:mb-0 min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white shadow-sm ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 dark:focus:ring-cyan-500 sm:text-sm sm:leading-6;
   }
 
   .newsletter button {
-    @apply flex-none rounded-md bg-gray-900 hover:bg-gray-600 dark:bg-white dark:hover:bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-white dark:text-gray-900 shadow-sm;
+    @apply flex-none rounded-md bg-neutral-900 hover:bg-neutral-600 dark:bg-white dark:hover:bg-neutral-200 px-3.5 py-2.5 text-sm font-semibold text-white dark:text-neutral-900 shadow-sm;
   }
 
   .content h1,
@@ -46,7 +46,7 @@
   .content h4,
   .content h5,
   .content h6 {
-    @apply text-gray-900 dark:text-white mb-4 pt-4 first:pt-0;
+    @apply text-neutral-900 dark:text-white mb-4 pt-4 first:pt-0;
   }
 
   .content h1 {
@@ -74,10 +74,10 @@
   }
 
   .content p {
-    @apply leading-loose text-lg mb-8 text-gray-600 dark:text-gray-300; 
+    @apply leading-loose text-lg mb-8 text-neutral-600 dark:text-neutral-300; 
   }
 
   .content blockquote {
-    @apply pl-4 border-l-2 border-gray-600 dark:border-gray-300;
+    @apply pl-4 border-l-2 border-neutral-600 dark:border-neutral-300;
   }
 }

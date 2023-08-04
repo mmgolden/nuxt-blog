@@ -5,15 +5,16 @@
       src="/png/avatar.png"
       alt="Headshot of Melinda Golden"
     />
-    <h1 class="text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+    <h1 class="text-5xl font-bold mb-4 text-neutral-900 dark:text-white">
       Hello, I'm Melinda Golden
     </h1>
-    <p class="text-lg text-gray-600 dark:text-gray-300">
-      I’m a self-taught software developer with a fine art and photography
-      background based in Asheville, NC. I have 7+ years of experience in
-      front-end development and use HTML, CSS, JavaScript, TypeScript, and Vue.
-      I run a local group for women in technology. My goal is to share my
-      knowledge and help other developers on their journey.
+    <p class="text-lg text-neutral-600 dark:text-neutral-300">
+      Based in Asheville, NC, I am a software developer with a background in
+      fine art and photography. I have over seven years of experience in
+      front-end development and specialize in using HTML, CSS, JavaScript,
+      TypeScript, and Vue. As part of my commitment to supporting women in
+      technology, I lead a local group for female developers. My objective is to
+      share my expertise and assist others in their development journeys.
     </p>
   </div>
 </template>

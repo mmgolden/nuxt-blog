@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-16 py-16"
+    class="bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 mt-16 py-16"
   >
     <!-- Top -->
     <div class="md:flex">
@@ -12,11 +12,13 @@
 
       <div>
         <h2
-          class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white inline sm:block"
+          class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-white inline sm:block"
         >
           Subscribe to get my latest posts
         </h2>
-        <p class="text-base md:text-lg text-gray-600 dark:text-gray-300 mt-2">
+        <p
+          class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2"
+        >
           I’m a software developer based in Asheville, NC. I have 7+ years of
           experience in front-end development and use HTML, CSS, JavaScript,
           TypeScript, and Vue. Find out when I publish new content by
@@ -28,7 +30,7 @@
     <!-- Form -->
     <div class="newsletter mt-8">
       <ConvertKitForm v-bind="formConfig" />
-      <p class="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">
+      <p class="mt-4 text-sm leading-6 text-neutral-600 dark:text-neutral-300">
         No spam. Unsubscribe whenever you want.
       </p>
     </div>

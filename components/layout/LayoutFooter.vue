@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-gray-50 border-t-gray-200 border-t-[1px] dark:bg-gray-900 dark:border-t-gray-800 mt-auto"
+    class="bg-neutral-50 border-t-neutral-200 border-t-[1px] dark:bg-neutral-900 dark:border-t-neutral-800 mt-auto"
   >
     <div
       class="mx-auto max-w-4xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
@@ -11,7 +11,7 @@
 
         <!-- Copyright -->
         <p
-          class="text-center text-xs leading-5 mt-4 md:mt-0 md:ml-4 text-gray-600 dark:text-gray-300"
+          class="text-center text-xs leading-5 mt-4 md:mt-0 md:ml-4 text-neutral-600 dark:text-neutral-300"
         >
           &copy; {{ currentYear }} Melinda Golden
         </p>
@@ -24,7 +24,7 @@
           :key="item.name"
           :href="item.href"
           target="_blank"
-          class="text-gray-900 hover:text-gray-600 dark:text-white dark:hover:text-gray-300 rounded-md"
+          class="text-neutral-900 hover:text-neutral-600 dark:text-white dark:hover:text-neutral-300 rounded-md"
         >
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
