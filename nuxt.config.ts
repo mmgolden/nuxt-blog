@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
-    "@nuxt/image"
+    "@nuxt/image",
+    "@nuxtjs/plausible"
   ],
 
   app: {
