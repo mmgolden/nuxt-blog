@@ -26,6 +26,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       formId: process.env.NUXT_FORM_ID,
+      formUrl: process.env.NUXT_FORM_URL,
+      recaptchaKey: process.env.NUXT_RECAPTCHA_KEY
     }
   },
 

@@ -11,7 +11,7 @@
     </Head>
 
     <div class="pt-16 pb-24 sm:pt-20 sm:pb-32">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8 mb">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <LayoutPageTitle>
           <template #title> Blog </template>
         </LayoutPageTitle>

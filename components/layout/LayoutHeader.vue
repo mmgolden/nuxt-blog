@@ -32,9 +32,9 @@
       :open="mobileMenuOpen"
       @close="mobileMenuOpen = false"
     >
-      <div class="fixed inset-0 z-10" />
+      <div class="fixed inset-0 z-50" />
       <DialogPanel
-        class="bg-white dark:bg-neutral-900 fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
+        class="bg-white dark:bg-neutral-900 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
       >
         <div class="flex items-center justify-between">
           <!-- Logo -->
@@ -78,9 +78,9 @@ import { NAVIGATION } from "@/constants/navigation";
 const { y } = useWindowScroll();
 
 const headerClass =
-  "z-50 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-white dark:border-b-neutral-900";
+  "z-40 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-white dark:border-b-neutral-900";
 const borderClass =
-  "z-50 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-neutral-200 dark:border-b-neutral-800";
+  "z-40 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-neutral-200 dark:border-b-neutral-800";
 
 const navigation = [
   { name: "About", href: NAVIGATION.ABOUT },
