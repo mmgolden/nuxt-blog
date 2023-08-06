@@ -17,7 +17,7 @@
         </LayoutPageTitle>
 
         <nuxt-img
-          class="h-full w-auto mb-8 lg:mb-12 rounded-md"
+          class="w-auto mb-8 lg:mb-12 rounded-md"
           src="/png/about.png"
           alt="Headshot of Melinda Golden"
         />
