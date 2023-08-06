@@ -5,8 +5,15 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "@nuxt/image",
-    "@nuxtjs/plausible"
+    "@nuxtjs/plausible",
+    "nuxt-simple-sitemap",
+    "nuxt-simple-robots"
   ],
+
+  site: {
+    url: "https://melindagolden.com",
+    trailingSlashes: true
+  },
 
   app: {
     head: {
@@ -26,6 +33,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       formId: process.env.NUXT_FORM_ID,
+      formUrl: process.env.NUXT_FORM_URL,
+      recaptchaKey: process.env.NUXT_RECAPTCHA_KEY
     }
   },
 
