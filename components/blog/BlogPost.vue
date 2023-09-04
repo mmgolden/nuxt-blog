@@ -10,7 +10,10 @@
       </time>
 
       <!-- Tags -->
-      <div v-if="post.tags && post.tags.length > 0">
+      <div
+        v-if="post.tags && post.tags.length > 0"
+        class="flex flex-wrap gap-2"
+      >
         <NuxtLink
           v-for="tag in post.tags"
           :key="tag"

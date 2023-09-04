@@ -62,7 +62,35 @@ export default defineConfig({
               {
                 value: "career",
                 label: "Career",
-              }
+              },
+              {
+                value: "projects",
+                label: "Projects",
+              },
+              {
+                value: "tutorials",
+                label: "Tutorials",
+              },
+              {
+                value: "business",
+                label: "Business",
+              },
+              {
+                value: "javascript",
+                label: "JavaScript",
+              },
+              {
+                value: "css",
+                label: "CSS",
+              },
+              {
+                value: "vue",
+                label: "Vue",
+              },
+              {
+                value: "nuxt",
+                label: "Nuxt",
+              },
             ],
           },
           {
