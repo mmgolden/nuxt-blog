@@ -6,7 +6,9 @@
     <div class="md:flex">
       <nuxt-img
         class="h-32 w-auto rounded-full mb-8 md:mb-0 md:mr-8"
-        src="/png/avatar.png"
+        provider="cloudinary"
+        src="v1693853971/nuxt-blog/ekyy29thyshtywke69go.png"
+        loading="lazy"
         alt="Headshot of Melinda Golden"
       />
 
