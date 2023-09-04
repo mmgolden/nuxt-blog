@@ -112,10 +112,10 @@
   }
 
   .content pre {
-    @apply mb-8 bg-neutral-50 dark:bg-neutral-800 p-4 rounded-sm;
+    @apply mb-8 text-base bg-neutral-50 dark:bg-neutral-800 p-4 whitespace-pre-wrap border border-neutral-200 rounded-md;
   }
 
   .content p code {
-    @apply bg-neutral-50 dark:bg-neutral-800 px-2 py-1 rounded-sm;
+    @apply text-base bg-neutral-50 dark:bg-neutral-800 px-2 py-1 border border-neutral-200 rounded-md text-neutral-900;
   }
 }

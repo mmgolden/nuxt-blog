@@ -44,6 +44,22 @@ export default defineNuxtConfig({
         default: "light-plus",
         dark: "dark-plus" ,
       }
+    },
+
+    markdown: {
+      // https://github.com/remarkjs/remark-external-links#options
+      remarkPlugins: [
+        ['remark-external-links', {
+          target: '_blank',
+          rel: 'nofollow'
+        }]
+      ]
+    }
+  },
+
+  image: {
+    cloudinary: {
+      baseURL: "https://res.cloudinary.com/melindagolden/image/upload/"
     }
   }
 });
