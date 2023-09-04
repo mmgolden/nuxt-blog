@@ -18,8 +18,10 @@
 
         <nuxt-img
           class="w-auto mb-8 lg:mb-12 rounded-md"
-          src="/png/about.png"
+          provider="cloudinary"
+          src="v1693853981/nuxt-blog/o99ytskneygipvu8prn4.png"
           alt="Headshot of Melinda Golden"
+          preload
         />
 
         <p
