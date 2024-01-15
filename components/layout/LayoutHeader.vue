@@ -84,6 +84,7 @@ const borderClass =
 
 const navigation = [
   { name: "About", href: NAVIGATION.ABOUT },
+  { name: "Speaking", href: NAVIGATION.SPEAKING },
   { name: "Blog", href: NAVIGATION.BLOG },
   { name: "Contact", href: NAVIGATION.CONTACT }
 ];
