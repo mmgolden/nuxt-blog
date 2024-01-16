@@ -26,7 +26,7 @@ export default defineNuxtConfig({
           type: "image/png",
           href: "/png/favicon.png"
         }
-      ],
+      ]
     }
   },
 
@@ -42,17 +42,20 @@ export default defineNuxtConfig({
     highlight: {
       theme: {
         default: "light-plus",
-        dark: "dark-plus" ,
+        dark: "dark-plus"
       }
     },
 
     markdown: {
       // https://github.com/remarkjs/remark-external-links#options
       remarkPlugins: [
-        ['remark-external-links', {
-          target: '_blank',
-          rel: 'nofollow'
-        }]
+        [
+          "remark-external-links",
+          {
+            target: "_blank",
+            rel: "nofollow"
+          }
+        ]
       ]
     }
   },

@@ -5,6 +5,7 @@
       provider="cloudinary"
       src="v1693853971/nuxt-blog/ekyy29thyshtywke69go.png"
       alt="Headshot of Melinda Golden"
+      placeholder
     />
     <h1 class="text-5xl font-bold mb-4 text-neutral-900 dark:text-white">
       Hello, I'm Melinda Golden
@@ -22,4 +23,4 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

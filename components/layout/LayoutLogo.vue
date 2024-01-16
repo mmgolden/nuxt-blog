@@ -21,4 +21,4 @@ const emit = defineEmits(["click"]);
 const click = () => emit("click");
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
