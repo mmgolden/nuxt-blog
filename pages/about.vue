@@ -10,7 +10,7 @@
       <Link rel="canonical" href="https://melindagolden.com/about/" />
     </Head>
 
-    <div class="pt-16 pb-24 sm:pt-20 sm:pb-32">
+    <div class="pt-16 sm:pt-20">
       <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <LayoutPageTitle>
           <template #title> About </template>
@@ -21,12 +21,10 @@
           provider="cloudinary"
           src="v1693853981/nuxt-blog/o99ytskneygipvu8prn4.png"
           alt="Headshot of Melinda Golden"
-          preload
+          placeholder
         />
 
-        <p
-          class="leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-600 dark:text-neutral-300"
-        >
+        <p class="text">
           Hi there! I'm Melinda Golden, a software developer based in Asheville,
           NC. With over seven years of experience in front-end development, I
           specialize in using HTML, CSS, JavaScript, TypeScript, and Vue. What I
@@ -35,9 +33,7 @@
           for design and thoroughly enjoy coding a stunning UI.
         </p>
 
-        <p
-          class="leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-600 dark:text-neutral-300"
-        >
+        <p class="text">
           My interest in web development began when I built a website for my
           wedding photography business using WordPress. From there, I began
           teaching myself to code and eventually transitioned to working at a
@@ -46,9 +42,7 @@
           ever since.
         </p>
 
-        <p
-          class="leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-600 dark:text-neutral-300"
-        >
+        <p class="text">
           In my free time, I like to work on projects and continue learning. I
           attend local tech meets regularly and even organize a local meetup for
           women in technology. I've also volunteered to speak and give
@@ -62,4 +56,12 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+.text {
+  @apply leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-600 dark:text-neutral-300;
+}
+
+.text:last-child {
+  @apply mb-0;
+}
+</style>

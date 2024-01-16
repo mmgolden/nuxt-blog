@@ -11,9 +11,7 @@
       <Link rel="canonical" :href="`https://melindagolden.com${path}`" />
     </Head>
 
-    <article
-      class="mx-auto max-w-4xl px-6 lg:px-8 pt-16 pb-16 sm:pt-20 sm:pb-20"
-    >
+    <article class="mx-auto max-w-4xl px-6 lg:px-8 pt-16 sm:pt-20">
       <BlogTitle>
         <template #title> {{ post.title }} </template>
         <template #date> {{ formatDate(post.date) }}</template>
@@ -31,7 +29,7 @@
 
       <ContentDoc class="content" />
 
-      <BlogNewsletter />
+      <BlogAuthor />
     </article>
   </main>
 </template>
