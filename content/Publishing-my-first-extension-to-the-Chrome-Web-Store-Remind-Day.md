@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: 'Publishing my first extension to the Chrome Web Store: Remind Day'
 date: 2024-07-07T04:00:00.000Z
 description: >-
@@ -29,6 +29,8 @@ I found some Chrome extensions that were fairly complex web apps built into the 
 I was struggling with deciding on an idea. I’m a perfectionist, so I have difficulty breaking free from that. I’m always waiting for the “perfect idea” before I start on anything. This time, I decided that the most important thing was just to get started. The idea doesn’t have to be perfect. My main goals were to start something, launch it, and not let it die with other unfinished projects. I thought of this as an experiment.
 
 I was inspired by the objective and key results (OKR) management software used by the last startup I worked at. I liked the idea of creating OKRs and weekly check-ins to see how you were doing. As a solo developer, I wanted to keep track of the things I was working on. I made a simple version in Notion at first. I turned my Notion project into a Chrome extension.
+
+![Notion progress tracker](https://res.cloudinary.com/melindagolden/image/upload/v1720377666/nuxt-blog/blog/ngxp0b7rqha1ocvsknig.png "Notion progress tracker")
 
 ## The tech stack for building a Chrome extension
 
@@ -67,7 +69,9 @@ Was dark mode necessary for launch? Absolutely not. But it’s fairly easy to ad
 
 I think it’s important to think about how your app will look and function before you sit down and start coding. As a front-end developer, good UX and UI are important to me. However, I didn’t think it was necessary to design a pixel-perfect mockup in Figma first. That would have been a waste of time for such a small project. If you’re using a good component library, you don’t need it. Instead, I made some simple wireframes with [Excalidraw](https://excalidraw.com/ "Excalidraw").
 
-## Time management
+![Excalidraw wireframes](https://res.cloudinary.com/melindagolden/image/upload/v1720377858/nuxt-blog/blog/l6mfsr9uhh2kgskkhsm7.png "Excalidraw wireframes")
+
+## Time management with a full-time job
 
 I have a full-time job, so finding the time to work on my extension was challenging. What worked for me was waking up earlier and working on my project for an hour or two before I started my job. Evenings don’t work because I’m usually too tired at the end of the day, and I want to spend time with my family. I would work on it on the weekends.
 
@@ -80,6 +84,8 @@ The Chrome developer documentation was a great resource. First, you must create 
 The documentation says you should only use the minimal permissions required for your extension. I thoroughly checked my permissions to ensure I only required what I needed. Certain permissions will trigger a message when you install the extension. I made the notification permission optional because you can turn on reminder notifications in the settings. The more invasive the extension is with permissions, the longer it will take for the team to review it.
 
 Preparing my store listing took me about a week. Preparing the screenshots I created using Figma took the most time. You must also create a privacy policy if you collect personal information like emails. Finally, after manual testing, I submitted my extension to the Chrome Web Store. In my case, it only took a day for it to be approved and published.
+
+![Remind Day screenshot](https://res.cloudinary.com/melindagolden/image/upload/v1720377959/nuxt-blog/blog/s1bv1xr1gbiddbb5yjnf.png "Remind Day screenshot")
 
 ## What I learned from building a Chrome extension
 
