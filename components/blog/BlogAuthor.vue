@@ -12,10 +12,10 @@
     />
 
     <p class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2">
-      Hey there! I'm a Senior Front-End Developer based in Asheville, NC. With
-      over {{ timeFromNow("2016-01-30") }} of experience, I've worked with small
-      companies and startups, creating performant, accessible, and responsive
-      web applications. I enjoy being an indie-maker and sharing my journey of
+      Hey there! I'm Melinda Golden, a Senior Front-End Developer with over
+      {{ timeFromNow("2016-01-30") }} of experience. I have worked with small
+      companies and startups to build performant, accessible, and responsive web
+      applications. I enjoy being an indie maker and sharing my journey of
       creating projects.
     </p>
   </div>

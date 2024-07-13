@@ -78,6 +78,7 @@ import { NAVIGATION } from "@/constants/navigation";
 
 const navigation = [
   { name: "About", href: NAVIGATION.ABOUT },
+  { name: "Projects", href: NAVIGATION.PROJECTS },
   { name: "Speaking", href: NAVIGATION.SPEAKING },
   { name: "Blog", href: NAVIGATION.BLOG },
   { name: "Contact", href: NAVIGATION.CONTACT }
