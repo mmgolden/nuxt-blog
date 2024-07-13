@@ -51,7 +51,7 @@ const showNewsletter = computed(() => route.name !== "contact");
 
 <style>
 .formkit-powered-by-convertkit {
-  display: none;
+  display: none !important;
 }
 
 .formkit-form.clare {
