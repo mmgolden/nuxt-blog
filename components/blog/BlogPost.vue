@@ -48,6 +48,8 @@
 </template>
 
 <script setup>
+import dayjs from "dayjs";
+
 defineProps({
   post: {
     type: Object,
@@ -56,11 +58,7 @@ defineProps({
 });
 
 const formatDate = (date) => {
-  return new Date(date).toLocaleDateString(undefined, {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
+  return dayjs(date).format("MMMM D, YYYY");
 };
 </script>
 

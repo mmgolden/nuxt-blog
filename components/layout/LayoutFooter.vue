@@ -5,7 +5,9 @@
     >
       <div class="flex flex-col md:flex-row items-center">
         <!-- Toggle-->
-        <LayoutToggle />
+        <ClientOnly>
+          <LayoutToggle />
+        </ClientOnly>
 
         <!-- Copyright -->
         <p

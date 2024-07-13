@@ -16,14 +16,16 @@
       </p>
 
       <!-- Form -->
-      <div class="newsletter mt-8">
-        <ConvertKitForm v-bind="formConfig" />
-        <p
-          class="mt-4 text-sm leading-6 text-neutral-600 dark:text-neutral-300"
-        >
-          No spam. Unsubscribe whenever you want.
-        </p>
-      </div>
+      <ClientOnly>
+        <div class="newsletter mt-8">
+          <ConvertKitForm v-bind="formConfig" />
+          <p
+            class="mt-4 text-sm leading-6 text-neutral-600 dark:text-neutral-300"
+          >
+            No spam. Unsubscribe whenever you want.
+          </p>
+        </div>
+      </ClientOnly>
     </div>
   </div>
 </template>

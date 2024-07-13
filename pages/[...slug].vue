@@ -35,6 +35,7 @@
 </template>
 
 <script setup>
+import dayjs from "dayjs";
 const { path } = useRoute();
 
 // Remove trailing slash before query
@@ -49,11 +50,7 @@ const { data: post } = await useAsyncData(`content-${postPath}`, () => {
 });
 
 const formatDate = (date) => {
-  return new Date(date).toLocaleDateString(undefined, {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
+  return dayjs(date).format("MMMM D, YYYY");
 };
 </script>
 
