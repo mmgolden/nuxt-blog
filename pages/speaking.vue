@@ -10,12 +10,12 @@
       <Link rel="canonical" href="https://melindagolden.com/speaking/" />
     </Head>
 
-    <div class="pt-16 sm:pt-20">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
-        <LayoutPageTitle>
-          <template #title> Speaking </template>
-        </LayoutPageTitle>
+    <LayoutPageTitle>
+      <template #title> Speaking </template>
+    </LayoutPageTitle>
 
+    <div class="py-20">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <!-- Podcasts -->
         <div>
           <h2
@@ -54,12 +54,12 @@
                 />
                 <div class="min-w-0 flex-auto">
                   <p
-                    class="text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
+                    class="text-base font-bold leading-6 text-neutral-900 dark:text-white"
                   >
                     {{ podcast.name }}
                   </p>
                   <p
-                    class="mt-1 truncate text-xs leading-5 text-neutral-500 dark:text-neutral-300"
+                    class="mt-1 truncate text-sm leading-5 text-neutral-500 dark:text-neutral-300"
                   >
                     {{ podcast.episode }}
                   </p>

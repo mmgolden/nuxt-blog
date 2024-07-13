@@ -1,5 +1,7 @@
 <template>
-  <header :class="[y > 100 ? borderClass : headerClass]">
+  <header
+    class="z-40 bg-neutral-50 dark:bg-neutral-900 fixed top-0 left-0 right-0"
+  >
     <nav
       class="mx-auto max-w-4xl flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
@@ -72,15 +74,7 @@
 import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-import { useWindowScroll } from "@vueuse/core";
 import { NAVIGATION } from "@/constants/navigation";
-
-const { y } = useWindowScroll();
-
-const headerClass =
-  "z-40 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-white dark:border-b-neutral-900";
-const borderClass =
-  "z-40 bg-white dark:bg-neutral-900 fixed top-0 left-0 right-0 border-b-[1px] border-b-neutral-200 dark:border-b-neutral-800";
 
 const navigation = [
   { name: "About", href: NAVIGATION.ABOUT },

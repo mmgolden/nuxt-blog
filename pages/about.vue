@@ -10,12 +10,12 @@
       <Link rel="canonical" href="https://melindagolden.com/about/" />
     </Head>
 
-    <div class="pt-16 sm:pt-20">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
-        <LayoutPageTitle>
-          <template #title> About </template>
-        </LayoutPageTitle>
+    <LayoutPageTitle>
+      <template #title> About </template>
+    </LayoutPageTitle>
 
+    <div class="py-20">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <nuxt-img
           class="w-auto mb-8 lg:mb-12 rounded-md"
           provider="cloudinary"

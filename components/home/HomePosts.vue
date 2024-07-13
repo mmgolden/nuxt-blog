@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto max-w-4xl pt-8 px-4 lg:px-8">
+  <div class="mx-auto max-w-4xl py-20 px-4 lg:px-8">
     <div
-      class="flex flex-col lg:flex-row lg:justify-between mb-10 border-b border-neutral-200 dark:border-neutral-800 pb-6 sm:mb-16 bg:white dark:bg-neutral-900"
+      class="flex flex-col lg:flex-row lg:justify-between mb-10 pb-6 sm:mb-16"
     >
       <h2
         class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2 lg:mb-0"

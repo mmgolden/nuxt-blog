@@ -28,7 +28,7 @@
     <div class="group relative">
       <!-- Title -->
       <h3
-        class="mt-3 text-xl font-semibold leading-6 text-neutral-900 group-hover:text-neutral-600 dark:text-white dark:group-hover:text-neutral-300"
+        class="mt-3 text-xl font-bold leading-6 text-neutral-900 group-hover:text-neutral-600 dark:text-white dark:group-hover:text-neutral-300"
       >
         <NuxtLink :href="`${post._path}/`">
           <span class="absolute inset-0" />

@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="bg-neutral-50 border-t-neutral-200 border-t-[1px] dark:bg-neutral-900 dark:border-t-neutral-800 mt-auto"
-  >
+  <footer class="bg-white dark:bg-neutral-950 mt-auto">
     <div
       class="mx-auto max-w-4xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
     >
