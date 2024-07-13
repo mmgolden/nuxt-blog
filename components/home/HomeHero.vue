@@ -13,14 +13,22 @@
       >
         Hello, I'm Melinda Golden
       </h1>
-      <p class="text-lg text-neutral-600 dark:text-neutral-300">
-        Based in Asheville, NC, I am a software developer with a background in
-        fine art and photography. I have over seven years of experience in
-        front-end development and specialize in using HTML, CSS, JavaScript,
-        TypeScript, and Vue. As part of my commitment to supporting women in
-        technology, I lead a local group for female developers. My objective is
-        to share my expertise and assist others in their development journeys.
-      </p>
+      <div class="flex flex-col gap-4">
+        <p class="text-lg text-neutral-600 dark:text-neutral-300">
+          Hey there! I'm a Senior Front-End Developer based in Asheville, NC. I
+          made the leap from being a wedding photographer to becoming a
+          self-taught software developer.
+        </p>
+        <p class="text-lg text-neutral-600 dark:text-neutral-300">
+          With over {{ timeFromNow("2016-01-30") }} of experience, I've worked
+          with small companies and startups, creating performant, accessible,
+          and responsive web applications.
+        </p>
+        <p class="text-lg text-neutral-600 dark:text-neutral-300">
+          I'm currently employed full-time, but in my free time, I enjoy being
+          an indie-maker and sharing my journey of creating projects.
+        </p>
+      </div>
     </div>
   </div>
 </template>
