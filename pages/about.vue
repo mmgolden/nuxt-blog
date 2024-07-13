@@ -10,12 +10,12 @@
       <Link rel="canonical" href="https://melindagolden.com/about/" />
     </Head>
 
-    <div class="pt-16 sm:pt-20">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
-        <LayoutPageTitle>
-          <template #title> About </template>
-        </LayoutPageTitle>
+    <LayoutPageTitle>
+      <template #title> About </template>
+    </LayoutPageTitle>
 
+    <div class="py-20">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <nuxt-img
           class="w-auto mb-8 lg:mb-12 rounded-md"
           provider="cloudinary"
@@ -26,11 +26,12 @@
 
         <p class="text">
           Hi there! I'm Melinda Golden, a software developer based in Asheville,
-          NC. With over seven years of experience in front-end development, I
-          specialize in using HTML, CSS, JavaScript, TypeScript, and Vue. What I
-          love most about web development is the ability to bring designs to
-          life and create something beautiful from scratch. I have a keen eye
-          for design and thoroughly enjoy coding a stunning UI.
+          NC. With over {{ timeFromNow("2016-01-30") }} of experience in
+          front-end development, I specialize in using HTML, CSS, JavaScript,
+          TypeScript, and Vue. What I love most about web development is the
+          ability to bring designs to life and create something beautiful from
+          scratch. I have a keen eye for design and thoroughly enjoy coding a
+          stunning UI.
         </p>
 
         <p class="text">

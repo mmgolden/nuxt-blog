@@ -10,12 +10,12 @@
       <Link rel="canonical" href="https://melindagolden.com/contact/" />
     </Head>
 
-    <div class="pt-16 pb-24 sm:pt-20 sm:pb-32">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
-        <LayoutPageTitle>
-          <template #title> Contact </template>
-        </LayoutPageTitle>
+    <LayoutPageTitle>
+      <template #title> Contact </template>
+    </LayoutPageTitle>
 
+    <div class="py-20">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <p
           class="mt-2 text-lg leading-8 text-neutral-600 dark:text-neutral-300"
         >
@@ -53,7 +53,7 @@
                     id="name"
                     autocomplete="name"
                     required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white shadow-sm ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 dark:focus:ring-cyan-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -73,7 +73,7 @@
                     id="email"
                     autocomplete="email"
                     required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white shadow-sm ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 dark:focus:ring-cyan-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -92,7 +92,7 @@
                     id="message"
                     rows="4"
                     required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white shadow-sm ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 dark:focus:ring-cyan-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@
             <div class="mt-10">
               <button
                 type="submit"
-                class="block w-full rounded-md bg-cyan-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
+                class="block w-full rounded-md bg-cyan-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
               >
                 Send
               </button>
