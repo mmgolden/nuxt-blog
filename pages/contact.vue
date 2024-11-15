@@ -14,12 +14,12 @@
       <template #title> Contact </template>
     </LayoutPageTitle>
 
-    <div class="py-20">
+    <div class="py-20 bg-white dark:bg-neutral-950">
       <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <p
           class="mt-2 text-lg leading-8 text-neutral-600 dark:text-neutral-300"
         >
-          I’m glad you want to get in touch! Email is the best way to reach me,
+          I'm glad you want to get in touch! Email is the best way to reach me,
           so feel free to send me a message at
           <a
             href="mailto:info@melindagolden.com"
@@ -27,7 +27,7 @@
             class="underline text-neutral-900 dark:text-white"
             >info@melindagolden.com</a
           >. If you prefer, you can also use the contact form below to email me
-          directly. I’m looking forward to hearing from you!
+          directly. I'm looking forward to hearing from you!
         </p>
 
         <ClientOnly>

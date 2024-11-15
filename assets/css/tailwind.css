@@ -6,11 +6,11 @@
 
 @layer base {
   html {
-    @apply bg-white;
+    @apply bg-neutral-50;
   }
 
   html.dark {
-    @apply bg-neutral-950;
+    @apply bg-neutral-900;
   }
 
   html,
