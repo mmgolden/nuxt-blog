@@ -26,11 +26,13 @@
       </template>
     </BlogTitle>
 
-    <article class="mx-auto max-w-4xl px-6 lg:px-8 py-20">
-      <ContentDoc class="content" />
+    <div class="bg-white dark:bg-neutral-950">
+      <article class="mx-auto max-w-4xl px-6 lg:px-8 py-20">
+        <ContentDoc class="content" />
 
-      <BlogAuthor />
-    </article>
+        <BlogAuthor />
+      </article>
+    </div>
   </div>
 </template>
 

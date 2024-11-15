@@ -20,9 +20,9 @@
           self-taught software developer.
         </p>
         <p class="text-lg text-neutral-600 dark:text-neutral-300">
-          With over {{ timeFromNow("2016-01-30") }} of experience, I've worked
-          with small companies and startups, creating performant, accessible,
-          and responsive web applications.
+          With over {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience, I've
+          worked with small companies and startups, creating performant,
+          accessible, and responsive web applications.
         </p>
         <p class="text-lg text-neutral-600 dark:text-neutral-300">
           I'm currently employed full-time, but in my free time, I enjoy being
@@ -33,6 +33,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { DATES } from "@/constants/dates";
+</script>
 
 <style scoped></style>

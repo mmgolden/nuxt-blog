@@ -14,7 +14,7 @@
       <template #title> Projects </template>
     </LayoutPageTitle>
 
-    <div class="py-20">
+    <div class="py-20 bg-white dark:bg-neutral-950">
       <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <!-- Projects -->
         <div>
