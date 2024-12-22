@@ -20,14 +20,14 @@
           v-for="(post, index) in posts"
           :key="post.title"
           :post="post"
-          :class="{ 'mb-12': index !== posts.length - 1 }"
+          :class="{ 'mb-12': posts && index !== posts.length - 1 }"
         />
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: posts } = await useAsyncData("blog", () => {
   return queryContent("/")
     .where({ draft: { $eq: false } })

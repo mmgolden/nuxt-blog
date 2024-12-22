@@ -128,7 +128,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { VueReCaptcha, useReCaptcha } from "vue-recaptcha-v3";
 
@@ -137,12 +137,14 @@ const config = useRuntimeConfig();
 
 const token = ref("");
 
-vueApp.use(VueReCaptcha, {
+const { use } = vueApp as any;
+
+use(VueReCaptcha, {
   siteKey: config.public.recaptchaKey
 });
 
 onMounted(async () => {
-  const { executeRecaptcha, recaptchaLoaded } = useReCaptcha();
+  const { executeRecaptcha, recaptchaLoaded } = useReCaptcha() as any;
 
   await recaptchaLoaded();
 

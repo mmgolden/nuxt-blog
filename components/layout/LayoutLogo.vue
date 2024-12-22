@@ -15,7 +15,7 @@
   </NuxtLink>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const emit = defineEmits(["click"]);
 
 const click = () => emit("click");

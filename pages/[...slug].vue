@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="post">
     <!-- Meta -->
     <Head>
       <Title>{{ post.title }}</Title>
@@ -36,7 +36,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import dayjs from "dayjs";
 const { path } = useRoute();
 
@@ -51,7 +51,7 @@ const { data: post } = await useAsyncData(`content-${postPath}`, () => {
   return queryContent().where({ _path: postPath }).findOne();
 });
 
-const formatDate = (date) => {
+const formatDate = (date: string) => {
   return dayjs(date).format("MMMM D, YYYY");
 };
 </script>

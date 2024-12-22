@@ -11,10 +11,10 @@
   </NuxtLink>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   navigation: {
-    type: Array,
+    type: Array<{ name: string; href: string }>,
     required: true
   }
 });

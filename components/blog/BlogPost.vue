@@ -47,7 +47,7 @@
   </article>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import dayjs from "dayjs";
 
 defineProps({
@@ -57,7 +57,7 @@ defineProps({
   }
 });
 
-const formatDate = (date) => {
+const formatDate = (date: string) => {
   return dayjs(date).format("MMMM D, YYYY");
 };
 </script>
