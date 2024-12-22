@@ -5,11 +5,11 @@
     @click="click"
   >
     <nuxt-img
-      class="h-6 w-auto"
+      class="h-6 w-auto -mt-1"
       src="/svg/logo.svg"
       alt="Melinda Golden Logo"
     />
-    <span class="ml-2 text-base font-bold text-neutral-900 dark:text-white">
+    <span class="ml-2 text-lg leading-6 text-neutral-600 dark:text-neutral-300">
       Melinda Golden
     </span>
   </NuxtLink>
