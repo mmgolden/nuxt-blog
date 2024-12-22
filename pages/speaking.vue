@@ -41,7 +41,7 @@
           >
             <li
               v-for="podcast in podcasts"
-              :key="podcast.email"
+              :key="podcast.name"
               class="flex flex-col md:flex-row md:justify-between gap-x-6 py-5"
             >
               <div class="flex flex-col md:flex-row min-w-0 gap-x-4">
@@ -81,7 +81,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { NAVIGATION } from "@/constants/navigation";
 
 const podcasts = [
