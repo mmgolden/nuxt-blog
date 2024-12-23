@@ -42,18 +42,18 @@
               <div class="sm:col-span-2">
                 <label
                   for="name"
-                  class="block text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
+                  class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
                 >
                   Full name
                 </label>
-                <div class="mt-2.5">
+                <div class="mt-2">
                   <input
                     type="text"
                     name="name"
                     id="name"
                     autocomplete="name"
                     required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-full bg-neutral-50 dark:bg-white/5 px-4 pt-2 pb-1.5 text-base text-neutral-900 dark:text-white border-none ring-1 -ring-offset-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:-ring-offset-2 focus:ring-neutral-900"
                   />
                 </div>
               </div>
@@ -62,18 +62,18 @@
               <div class="sm:col-span-2">
                 <label
                   for="email"
-                  class="block text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
+                  class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
                 >
                   Email
                 </label>
-                <div class="mt-2.5">
+                <div class="mt-2">
                   <input
                     type="email"
                     name="email"
                     id="email"
                     autocomplete="email"
                     required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-full bg-neutral-50 dark:bg-white/5 px-4 pt-2 pb-1.5 text-base text-neutral-900 dark:text-white border-none ring-1 -ring-offset-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:-ring-offset-2 focus:ring-neutral-900"
                   />
                 </div>
               </div>
@@ -82,17 +82,17 @@
               <div class="sm:col-span-2">
                 <label
                   for="message"
-                  class="block text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
+                  class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
                 >
                   Message
                 </label>
-                <div class="mt-2.5">
+                <div class="mt-2">
                   <textarea
                     name="message"
                     id="message"
                     rows="4"
                     required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-3xl bg-neutral-50 dark:bg-white/5 px-4 pt-2 pb-1.5 text-base text-neutral-900 dark:text-white border-none ring-1 -ring-offset-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:-ring-offset-2 focus:ring-neutral-900"
                   />
                 </div>
               </div>
@@ -113,13 +113,8 @@
               />
             </div>
 
-            <div class="mt-10">
-              <button
-                type="submit"
-                class="block w-full rounded-md bg-cyan-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
-              >
-                Send
-              </button>
+            <div class="mt-10 flex justify-end">
+              <BaseButton type="submit">Send message</BaseButton>
             </div>
           </form>
         </ClientOnly>

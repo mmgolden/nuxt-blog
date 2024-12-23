@@ -10,20 +10,33 @@
       <LayoutLogo />
 
       <!-- Mobile menu button -->
-      <div class="flex lg:hidden">
+      <div class="flex items-center gap-6 lg:hidden">
+        <!-- Theme button -->
+        <ClientOnly>
+          <LayoutThemeButton />
+        </ClientOnly>
+
         <button
           type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-900 dark:text-white"
+          class="rounded-full p-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-white/10 ring-1 ring-inset ring-neutral-300 dark:ring-neutral-700 focus-visible:outline-neutral-900 dark:focus-visible:outline-neutral-700"
           @click="mobileMenuOpen = true"
         >
           <span class="sr-only">Open main menu</span>
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+          <Bars3Icon
+            class="h-5 w-5 text-neutral-900 dark:text-white"
+            aria-hidden="true"
+          />
         </button>
       </div>
 
       <!-- Nav items -->
-      <div class="hidden lg:flex lg:gap-x-12">
+      <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
         <LayoutNavItems :navigation="navigation" />
+
+        <!-- Theme button -->
+        <ClientOnly>
+          <LayoutThemeButton />
+        </ClientOnly>
       </div>
     </nav>
 
@@ -45,11 +58,14 @@
           <!-- Mobile menu button -->
           <button
             type="button"
-            class="-m-2.5 rounded-md p-2.5 text-neutral-900 dark:text-white"
+            class="rounded-full p-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-white/10 ring-1 ring-inset ring-neutral-300 dark:ring-neutral-700 focus-visible:outline-neutral-900 dark:focus-visible:outline-neutral-700"
             @click="mobileMenuOpen = false"
           >
             <span class="sr-only">Close menu</span>
-            <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+            <XMarkIcon
+              class="h-5 w-5 text-neutral-900 dark:text-white"
+              aria-hidden="true"
+            />
           </button>
         </div>
 
