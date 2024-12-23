@@ -65,11 +65,11 @@ const showNewsletter = computed(() => route.name !== "contact");
 }
 
 .formkit-form.clare .formkit-input {
-  @apply min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 dark:focus:ring-cyan-600 sm:text-sm sm:leading-6 !important;
+  @apply min-w-0 flex-auto rounded-full bg-neutral-50 dark:bg-white/5 text-base text-neutral-900 dark:text-white border-none ring-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:ring-neutral-900 h-10 !important;
 }
 
 .formkit-form.clare .formkit-submit {
-  @apply flex-none rounded-md bg-cyan-700 text-center text-sm font-semibold text-white hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700 w-full md:w-auto h-10 !important;
+  @apply flex-none rounded-full text-base flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-900 dark:bg-neutral-800 text-white hover:bg-neutral-700 dark:hover:bg-white/10 focus-visible:outline-neutral-700 w-full md:w-auto h-10 !important;
 }
 
 .formkit-form.clare .formkit-submit span {
