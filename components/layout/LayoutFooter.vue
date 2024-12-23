@@ -4,14 +4,9 @@
       class="mx-auto max-w-4xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
     >
       <div class="flex flex-col md:flex-row items-center">
-        <!-- Toggle-->
-        <ClientOnly>
-          <LayoutToggle />
-        </ClientOnly>
-
         <!-- Copyright -->
         <p
-          class="text-center text-xs leading-5 mt-4 md:mt-0 md:ml-4 text-neutral-600 dark:text-neutral-300"
+          class="text-center text-xs leading-5 mt-4 md:mt-0 text-neutral-600 dark:text-neutral-300"
         >
           &copy; {{ currentYear }} Melinda Golden
         </p>

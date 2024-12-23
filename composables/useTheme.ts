@@ -2,12 +2,12 @@ import { ref, onMounted, watch } from "vue";
 import type { Ref } from "vue";
 
 interface UseTheme {
-  isDarkTheme: Ref<boolean>
+  isDarkTheme: Ref<boolean>;
 }
 
-export const useTheme = (): UseTheme => {
-  const isDarkTheme: Ref<boolean> = ref(false);
+const isDarkTheme: Ref<boolean> = ref(false);
 
+export const useTheme = (): UseTheme => {
   onMounted(() => {
     const prefersDarkTheme =
       window.matchMedia &&
@@ -35,4 +35,4 @@ export const useTheme = (): UseTheme => {
   });
 
   return { isDarkTheme };
-}
+};
