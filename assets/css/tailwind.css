@@ -31,13 +31,11 @@
     font-style: normal;
   }
 
-  a,
-  button {
+  a {
     @apply border-[2px] border-transparent;
   }
 
-  a:focus-visible,
-  button:focus-visible {
+  a:focus-visible {
     @apply outline-none border-cyan-500;
   }
 }
