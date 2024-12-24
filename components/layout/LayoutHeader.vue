@@ -9,24 +9,19 @@
       <!-- Logo -->
       <LayoutLogo />
 
-      <!-- Mobile menu button -->
       <div class="flex items-center gap-6 lg:hidden">
         <!-- Theme button -->
         <ClientOnly>
           <LayoutThemeButton />
         </ClientOnly>
 
-        <button
-          type="button"
-          class="rounded-full p-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-white/10 ring-1 ring-inset ring-neutral-300 dark:ring-neutral-700 focus-visible:outline-neutral-900 dark:focus-visible:outline-neutral-700"
-          @click="mobileMenuOpen = true"
-        >
-          <span class="sr-only">Open main menu</span>
+        <!-- Mobile menu button -->
+        <BaseIconButton label="Open main menu" @click="mobileMenuOpen = true">
           <Bars3Icon
-            class="h-5 w-5 text-neutral-900 dark:text-white"
+            class="h-6 w-6 text-neutral-900 dark:text-white"
             aria-hidden="true"
           />
-        </button>
+        </BaseIconButton>
       </div>
 
       <!-- Nav items -->
@@ -49,24 +44,19 @@
     >
       <div class="fixed inset-0 z-50" />
       <DialogPanel
-        class="bg-white dark:bg-neutral-900 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
+        class="bg-neutral-50 dark:bg-neutral-900 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
       >
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <LayoutLogo @click="mobileMenuOpen = false" />
 
           <!-- Mobile menu button -->
-          <button
-            type="button"
-            class="rounded-full p-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-white/10 ring-1 ring-inset ring-neutral-300 dark:ring-neutral-700 focus-visible:outline-neutral-900 dark:focus-visible:outline-neutral-700"
-            @click="mobileMenuOpen = false"
-          >
-            <span class="sr-only">Close menu</span>
+          <BaseIconButton label="Close menu" @click="mobileMenuOpen = false">
             <XMarkIcon
-              class="h-5 w-5 text-neutral-900 dark:text-white"
+              class="h-6 w-6 text-neutral-900 dark:text-white"
               aria-hidden="true"
             />
-          </button>
+          </BaseIconButton>
         </div>
 
         <div class="mt-6 flow-root">

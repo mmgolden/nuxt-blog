@@ -5,7 +5,7 @@
     @click="click"
   >
     <nuxt-img
-      class="h-7 w-auto"
+      class="h-9 w-auto"
       src="/svg/logo.svg"
       alt="Melinda Golden Logo"
     />
