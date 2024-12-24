@@ -1,9 +1,11 @@
 <template>
   <header
     class="z-40 bg-neutral-50 dark:bg-neutral-900 fixed top-0 left-0 right-0"
+    :class="{ shadow: y > 70 }"
   >
     <nav
-      class="mx-auto max-w-4xl flex items-center justify-between p-6 lg:px-8"
+      class="mx-auto max-w-4xl flex items-center justify-between px-6 lg:px-8 transition-all"
+      :class="[y > 70 ? 'py-3' : 'py-6']"
       aria-label="Global"
     >
       <!-- Logo -->
@@ -80,7 +82,12 @@
 import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+import { useWindowScroll } from "@vueuse/core";
 import { NAVIGATION } from "@/constants/navigation";
+
+const { y } = useWindowScroll();
+
+const mobileMenuOpen = ref(false);
 
 const navigation = [
   { name: "About", href: NAVIGATION.ABOUT },
@@ -89,8 +96,6 @@ const navigation = [
   { name: "Blog", href: NAVIGATION.BLOG },
   { name: "Contact", href: NAVIGATION.CONTACT }
 ];
-
-const mobileMenuOpen = ref(false);
 </script>
 
 <style scoped></style>
