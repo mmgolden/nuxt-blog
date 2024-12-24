@@ -53,9 +53,9 @@
                     >
                       {{ project.name }}
                     </p>
-                    <BaseTag :type="project.tag" size="small">{{
-                      project.tag
-                    }}</BaseTag>
+                    <BaseTag :type="project.tag" size="small">
+                      {{ project.tag }}
+                    </BaseTag>
                   </div>
                   <p
                     class="mt-1 text-sm leading-5 text-neutral-500 dark:text-neutral-300"
@@ -81,7 +81,9 @@
 </template>
 
 <script setup lang="ts">
-const projects = [
+import type { Project } from "@/types";
+
+const projects: Project[] = [
   {
     name: "Remind Day",
     description:

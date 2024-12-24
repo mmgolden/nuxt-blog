@@ -12,12 +12,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  navigation: {
-    type: Array<{ name: string; href: string }>,
-    required: true
-  }
-});
+defineProps<{
+  navigation: Array<{ name: string; href: string }>;
+}>();
 
 const emit = defineEmits(["click"]);
 

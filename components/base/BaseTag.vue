@@ -15,18 +15,12 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  size: {
-    type: String,
-    required: false,
-    default: "medium"
-  },
-  type: {
-    type: String,
-    required: false,
-    default: "default"
-  }
-});
+interface Props {
+  size?: "small" | "medium";
+  type?: "active" | "default";
+}
+
+const { size = "medium", type = "default" } = defineProps<Props>();
 </script>
 
 <style scoped></style>

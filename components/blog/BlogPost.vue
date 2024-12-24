@@ -49,13 +49,11 @@
 
 <script setup lang="ts">
 import dayjs from "dayjs";
+import type { ParsedContent } from "@nuxt/content";
 
-defineProps({
-  post: {
-    type: Object,
-    required: true
-  }
-});
+defineProps<{
+  post: ParsedContent;
+}>();
 
 const formatDate = (date: string) => {
   return dayjs(date).format("MMMM D, YYYY");

@@ -5,7 +5,8 @@
     "dev": "tinacms dev -c 'nuxt dev'",
     "generate": "tinacms build && nuxt generate",
     "preview": "nuxt preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "npx nuxi typecheck"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.17",
