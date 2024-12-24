@@ -4,7 +4,7 @@
     :class="{ shadow: y > 70 }"
   >
     <nav
-      class="mx-auto max-w-4xl flex items-center justify-between px-6 lg:px-8 transition-all"
+      class="mx-auto max-w-3xl flex items-center justify-between px-6 lg:px-8 transition-all"
       :class="[y > 70 ? 'py-3' : 'py-6']"
       aria-label="Global"
     >
