@@ -1,5 +1,8 @@
 <template>
-  <article class="flex flex-col items-start justify-between" v-bind="$attrs">
+  <article
+    class="flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-300 dark:border-white/10 rounded-xl py-5 px-6"
+    v-bind="$attrs"
+  >
     <div class="flex items-center gap-x-4 text-sm">
       <!-- Date -->
       <time
@@ -28,9 +31,9 @@
     <div class="group relative">
       <!-- Title -->
       <h3
-        class="mt-3 text-xl font-bold leading-6 text-neutral-900 group-hover:text-neutral-600 dark:text-white dark:group-hover:text-neutral-300"
+        class="mt-3 text-xl font-bold leading-normal text-neutral-900 group-hover:text-neutral-600 dark:text-white dark:group-hover:text-neutral-300"
       >
-        <NuxtLink :href="`${post._path}/`">
+        <NuxtLink :href="`${post._path}/`" class="rounded-xl">
           <span class="absolute inset-0" />
           {{ post.title }}
         </NuxtLink>
@@ -39,7 +42,7 @@
       <!-- Description -->
       <p
         v-if="post.description"
-        class="mt-5 line-clamp-3 text-base leading-8 text-neutral-600 dark:text-neutral-300"
+        class="mt-3 line-clamp-3 text-base leading-normal text-neutral-500 dark:text-neutral-300"
       >
         {{ post.description }}
       </p>

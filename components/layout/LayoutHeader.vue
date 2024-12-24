@@ -27,7 +27,7 @@
       </div>
 
       <!-- Nav items -->
-      <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
+      <div class="hidden lg:flex lg:gap-x-10 lg:items-center">
         <LayoutNavItems :navigation="navigation" />
 
         <!-- Theme button -->

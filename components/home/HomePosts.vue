@@ -1,19 +1,19 @@
 <template>
-  <div class="bg-neutral-50 dark:bg-neutral-950">
+  <div class="bg-neutral-50 dark:bg-neutral-900">
     <div class="mx-auto max-w-3xl pt-10 pb-20 px-4 lg:px-8">
       <div class="mb-10 sm:mb-16">
         <div
           class="flex flex-col sm:flex-row sm:justify-between sm:items-end pb-2"
         >
           <h2
-            class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2 lg:mb-0"
+            class="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2 lg:mb-0"
           >
             Latest articles
           </h2>
 
           <NuxtLink
             :to="NAVIGATION.BLOG"
-            class="flex text-base text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+            class="flex text-base text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white px-2 py-1 -ml-2 sm:ml-0 rounded-xl"
           >
             <span class="mr-2">See all articles</span>
             <svg
@@ -33,7 +33,7 @@
           </NuxtLink>
         </div>
 
-        <div class="w-full border-t border-neutral-300" />
+        <div class="w-full border-t border-neutral-300 dark:border-white/10" />
       </div>
 
       <BlogPost

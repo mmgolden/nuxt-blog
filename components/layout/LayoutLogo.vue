@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     to="/"
-    class="flex items-center -m-1.5 p-1.5 rounded-md"
+    class="flex items-center -m-1.5 p-1.5 rounded-full"
     @click="click"
   >
     <nuxt-img
