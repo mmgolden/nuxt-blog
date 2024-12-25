@@ -14,8 +14,8 @@
       <template #title> About </template>
     </LayoutPageTitle>
 
-    <div class="py-20 bg-white dark:bg-neutral-950">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-950">
+      <div class="mx-auto max-w-3xl px-4 lg:px-8">
         <nuxt-img
           class="w-auto mb-8 lg:mb-12 rounded-md"
           provider="cloudinary"
