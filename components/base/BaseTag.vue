@@ -6,7 +6,7 @@
       size === 'medium' ? 'px-3 pt-1.5 pb-1 text-sm' : '',
       type === 'active' ? 'bg-emerald-600 text-white' : '',
       type === 'default'
-        ? 'bg-neutral-200 dark:bg-neutral-700 text-neutral-700 hover:bg-neutral-300 dark:text-white dark:hover:bg-neutral-800'
+        ? 'bg-neutral-200 dark:bg-neutral-700 text-neutral-700 hover:bg-neutral-300 dark:text-white dark:hover:bg-white/20'
         : ''
     ]"
   >

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-neutral-50 dark:bg-neutral-900">
-    <div class="mx-auto max-w-3xl pt-10 pb-20 px-4 lg:px-8">
-      <div class="mb-10 sm:mb-16">
+    <div class="mx-auto max-w-3xl pt-10 pb-10 px-4 lg:px-8">
+      <div class="mb-12">
         <div
           class="flex flex-col sm:flex-row sm:justify-between sm:items-end pb-2"
         >
