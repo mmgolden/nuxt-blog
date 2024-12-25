@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-300 dark:border-white/10 rounded-xl py-5 px-6"
+    class="flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-xl py-5 px-6"
     v-bind="$attrs"
   >
     <div class="flex items-center gap-x-4 text-sm">
@@ -23,7 +23,7 @@
           to="/"
           class="block rounded-full max-w-fit"
         >
-          <BaseTag>{{ tag }}</BaseTag>
+          <BaseTag size="small">{{ tag }}</BaseTag>
         </NuxtLink>
       </div>
     </div>

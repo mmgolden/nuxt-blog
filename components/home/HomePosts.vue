@@ -33,7 +33,7 @@
           </NuxtLink>
         </div>
 
-        <div class="w-full border-t border-neutral-300 dark:border-white/10" />
+        <div class="w-full border-t border-neutral-200 dark:border-white/10" />
       </div>
 
       <BlogPost
