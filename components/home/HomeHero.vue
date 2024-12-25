@@ -9,7 +9,7 @@
         placeholder
       />
       <h1
-        class="text-3xl md:text-4xl font-bold mb-4 text-neutral-900 dark:text-white"
+        class="text-2xl md:text-4xl font-bold mb-4 text-neutral-900 dark:text-white"
       >
         Hello, I'm Melinda Golden
       </h1>
