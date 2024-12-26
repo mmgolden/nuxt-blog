@@ -14,8 +14,8 @@
       <template #title> Blog </template>
     </LayoutPageTitle>
 
-    <div class="py-20 bg-white dark:bg-neutral-950">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-900">
+      <div class="mx-auto max-w-3xl px-6 lg:px-8">
         <BlogPost
           v-for="(post, index) in posts"
           :key="post.title"

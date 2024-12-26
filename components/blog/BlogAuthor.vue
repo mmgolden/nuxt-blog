@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-t border-neutral-200 dark:border-neutral-800 mt-16 pt-16 md:flex"
+    class="border-t border-neutral-200 dark:border-white/10 mt-16 pt-16 md:flex"
   >
     <nuxt-img
       class="h-28 w-auto rounded-full mb-8 md:mb-0 md:mr-8"
