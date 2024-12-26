@@ -44,7 +44,7 @@
             >
               <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
                 <div class="flex justify-between mb-4 sm:mb-0">
-                  <nuxt-img
+                  <NuxtImg
                     class="h-12 w-12 flex-none rounded-full bg-neutral-50 dark:bg-neutral-800"
                     provider="cloudinary"
                     :src="podcast.imageUrl"

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-neutral-50 dark:bg-neutral-900">
     <div class="mx-auto max-w-3xl pt-12 pb-20 px-4 lg:px-8">
-      <nuxt-img
+      <NuxtImg
         class="h-28 w-auto rounded-full mb-8"
         provider="cloudinary"
         src="v1693853971/nuxt-blog/ekyy29thyshtywke69go.png"

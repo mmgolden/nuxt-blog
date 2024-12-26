@@ -4,11 +4,7 @@
     class="flex items-center -m-1.5 p-1.5 rounded-full"
     @click="click"
   >
-    <nuxt-img
-      class="h-9 w-auto"
-      src="/svg/logo.svg"
-      alt="Melinda Golden Logo"
-    />
+    <NuxtImg class="h-9 w-auto" src="/svg/logo.svg" alt="Melinda Golden Logo" />
     <span class="sr-only"> Melinda Golden </span>
   </NuxtLink>
 </template>

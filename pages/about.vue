@@ -16,7 +16,7 @@
 
     <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-900">
       <div class="mx-auto max-w-3xl px-4 lg:px-8">
-        <nuxt-img
+        <NuxtImg
           class="w-auto mb-8 lg:mb-12 rounded-md"
           provider="cloudinary"
           src="v1693853981/nuxt-blog/o99ytskneygipvu8prn4.png"
