@@ -14,8 +14,8 @@
       <template #title> Contact </template>
     </LayoutPageTitle>
 
-    <div class="py-20 bg-white dark:bg-neutral-950">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-900">
+      <div class="mx-auto max-w-3xl px-6 lg:px-8">
         <p
           class="mt-2 text-lg leading-8 text-neutral-600 dark:text-neutral-300"
         >
@@ -39,63 +39,31 @@
           >
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <!-- Name -->
-              <div class="sm:col-span-2">
-                <label
-                  for="name"
-                  class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
-                >
-                  Full name
-                </label>
-                <div class="mt-2">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    autocomplete="name"
-                    required
-                    class="block w-full rounded-full bg-neutral-50 dark:bg-white/5 px-4 pt-2 pb-1.5 text-base text-neutral-900 dark:text-white border-none ring-1 -ring-offset-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:-ring-offset-2 focus:ring-neutral-900"
-                  />
-                </div>
-              </div>
+              <BaseInput
+                label="Full name"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
 
               <!-- Email -->
-              <div class="sm:col-span-2">
-                <label
-                  for="email"
-                  class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
-                >
-                  Email
-                </label>
-                <div class="mt-2">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autocomplete="email"
-                    required
-                    class="block w-full rounded-full bg-neutral-50 dark:bg-white/5 px-4 pt-2 pb-1.5 text-base text-neutral-900 dark:text-white border-none ring-1 -ring-offset-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:-ring-offset-2 focus:ring-neutral-900"
-                  />
-                </div>
-              </div>
+              <BaseInput
+                label="Email"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+              />
 
               <!-- Message -->
-              <div class="sm:col-span-2">
-                <label
-                  for="message"
-                  class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
-                >
-                  Message
-                </label>
-                <div class="mt-2">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="4"
-                    required
-                    class="block w-full rounded-3xl bg-neutral-50 dark:bg-white/5 px-4 pt-2 pb-1.5 text-base text-neutral-900 dark:text-white border-none ring-1 -ring-offset-1 ring-neutral-300 dark:ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:-ring-offset-2 focus:ring-neutral-900"
-                  />
-                </div>
-              </div>
+              <BaseTextarea
+                label="Message"
+                name="message"
+                id="message"
+                required
+              />
 
               <!-- Hidden -->
               <input

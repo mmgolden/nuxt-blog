@@ -63,7 +63,7 @@ const showNewsletter = computed(() => route.name !== "contact");
 }
 
 .formkit-form.clare .formkit-input {
-  @apply min-w-0 flex-auto rounded-full bg-white/5 text-base text-white border-none ring-1 ring-neutral-300 ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:ring-cyan-500 h-10 !important;
+  @apply min-w-0 flex-auto rounded-full bg-white/5 text-base text-white border-none ring-1 ring-white/15 placeholder:text-neutral-400 focus:ring-2 focus:ring-cyan-500 h-10 !important;
 }
 
 .formkit-form.clare .formkit-submit {
