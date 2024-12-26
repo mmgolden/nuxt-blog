@@ -36,48 +36,55 @@
           </p>
 
           <ul role="list" class="flex flex-col gap-y-6">
-            <li v-for="podcast in podcasts" :key="podcast.name">
+            <li
+              v-for="podcast in podcasts"
+              :key="podcast.name"
+              class="cursor-pointer bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl sm:rounded-full flex flex-col sm:flex-row sm:justify-between sm:items-center gap-x-6 py-5 px-4"
+              @click="goToPodcast(podcast)"
+            >
+              <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
+                <div class="flex justify-between mb-4 sm:mb-0">
+                  <nuxt-img
+                    class="h-12 w-12 flex-none rounded-full bg-neutral-50 dark:bg-neutral-800"
+                    provider="cloudinary"
+                    :src="podcast.imageUrl"
+                    :alt="podcast.alt"
+                    placeholder
+                  />
+
+                  <a
+                    :href="podcast.link"
+                    target="_blank"
+                    class="shrink-0 flex sm:hidden -mt-2 -mr-2 w-12 h-12 rounded-full justify-center items-center"
+                  >
+                    <span class="sr-only">View podcast</span>
+                    <ArrowUpRightIcon
+                      class="w-6 h-6 text-neutral-900 dark:text-white"
+                    />
+                  </a>
+                </div>
+                <div class="min-w-0 flex-auto">
+                  <p
+                    class="text-base font-bold leading-6 text-neutral-900 dark:text-white"
+                  >
+                    {{ podcast.name }}
+                  </p>
+                  <p
+                    class="mt-1 text-sm leading-5 text-neutral-500 dark:text-neutral-300"
+                  >
+                    {{ podcast.episode }}
+                  </p>
+                </div>
+              </div>
               <a
                 :href="podcast.link"
                 target="_blank"
-                class="bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl sm:rounded-full flex flex-col sm:flex-row sm:justify-between sm:items-center gap-x-6 py-5 px-4 focus-visible:border-neutral-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500"
+                class="shrink-0 hidden sm:flex sm:mr-2 w-12 h-12 rounded-full justify-center items-center"
               >
-                <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
-                  <div class="flex justify-between mb-4 sm:mb-0">
-                    <nuxt-img
-                      class="h-12 w-12 flex-none rounded-full bg-neutral-50 dark:bg-neutral-800"
-                      provider="cloudinary"
-                      :src="podcast.imageUrl"
-                      :alt="podcast.alt"
-                      placeholder
-                    />
-
-                    <div class="sm:hidden shrink-0">
-                      <span class="sr-only">View podcast</span>
-                      <ArrowUpRightIcon
-                        class="w-6 h-6 text-neutral-900 dark:text-white"
-                      />
-                    </div>
-                  </div>
-                  <div class="min-w-0 flex-auto">
-                    <p
-                      class="text-base font-bold leading-6 text-neutral-900 dark:text-white"
-                    >
-                      {{ podcast.name }}
-                    </p>
-                    <p
-                      class="mt-1 text-sm leading-5 text-neutral-500 dark:text-neutral-300"
-                    >
-                      {{ podcast.episode }}
-                    </p>
-                  </div>
-                </div>
-                <div class="shrink-0 hidden sm:block sm:pr-2">
-                  <span class="sr-only">View podcast</span>
-                  <ArrowUpRightIcon
-                    class="w-6 h-6 text-neutral-900 dark:text-white"
-                  />
-                </div>
+                <span class="sr-only">View podcast</span>
+                <ArrowUpRightIcon
+                  class="w-6 h-6 text-neutral-900 dark:text-white"
+                />
               </a>
             </li>
           </ul>
@@ -90,8 +97,9 @@
 <script setup lang="ts">
 import { ArrowUpRightIcon } from "@heroicons/vue/24/outline";
 import { NAVIGATION } from "@/constants/navigation";
+import type { Podcast } from "@/types";
 
-const podcasts = [
+const podcasts: Podcast[] = [
   {
     name: "Cloudinary DevJams",
     episode:
@@ -101,6 +109,10 @@ const podcasts = [
     link: "https://www.youtube.com/live/Zme3mQ0aTCg?si=o6wLT1nOePIj3UIk"
   }
 ];
+
+const goToPodcast = (podcast: Podcast) => {
+  window.open(podcast.link, "_blank");
+};
 </script>
 
 <style scoped></style>

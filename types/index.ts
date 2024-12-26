@@ -6,3 +6,11 @@ export interface Project {
   link: string;
   tag: "active" | "default";
 }
+
+export interface Podcast {
+  name: string;
+  episode: string;
+  imageUrl: string;
+  alt: string;
+  link: string;
+}
