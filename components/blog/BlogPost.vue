@@ -1,7 +1,8 @@
 <template>
   <article
-    class="flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl py-5 px-4 md:px-6"
+    class="cursor-pointer flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl py-5 px-4 md:px-6"
     v-bind="$attrs"
+    @click="goToPost"
   >
     <div class="flex items-center gap-x-4 text-sm">
       <!-- Date -->
@@ -54,12 +55,18 @@
 import dayjs from "dayjs";
 import type { ParsedContent } from "@nuxt/content";
 
-defineProps<{
+const props = defineProps<{
   post: ParsedContent;
 }>();
 
+const router = useRouter();
+
 const formatDate = (date: string) => {
   return dayjs(date).format("MMMM D, YYYY");
+};
+
+const goToPost = () => {
+  router.push({ path: `${props.post._path}/` });
 };
 </script>
 
