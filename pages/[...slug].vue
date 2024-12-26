@@ -27,7 +27,7 @@
     </BlogTitle>
 
     <div class="bg-neutral-50 dark:bg-neutral-900">
-      <article class="mx-auto max-w-3xl px-6 lg:px-8 pt-10 pb-10">
+      <article class="mx-auto max-w-3xl px-4 lg:px-8 pt-10 pb-10">
         <ContentDoc class="content" />
         <BlogAuthor />
       </article>

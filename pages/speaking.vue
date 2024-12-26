@@ -14,8 +14,8 @@
       <template #title> Speaking </template>
     </LayoutPageTitle>
 
-    <div class="py-20 bg-white dark:bg-neutral-950">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-900">
+      <div class="mx-auto max-w-3xl px-4 lg:px-8">
         <!-- Podcasts -->
         <div>
           <h2
@@ -24,7 +24,7 @@
             Podcasts
           </h2>
           <p
-            class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2 mb-4"
+            class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2 mb-8"
           >
             I have been a guest on the following podcasts. Please
             <NuxtLink
@@ -32,47 +32,53 @@
               class="text-neutral-900 dark:text-white underline"
               >contact me</NuxtLink
             >
-            if you’d like to invite me to yours.
+            if you'd like to invite me to yours.
           </p>
 
-          <ul
-            role="list"
-            class="divide-y divide-neutral-100 dark:divide-neutral-800"
-          >
-            <li
-              v-for="podcast in podcasts"
-              :key="podcast.name"
-              class="flex flex-col md:flex-row md:justify-between gap-x-6 py-5"
-            >
-              <div class="flex flex-col md:flex-row min-w-0 gap-x-4">
-                <nuxt-img
-                  class="h-12 w-12 flex-none rounded-full bg-neutral-50 dark:bg-neutral-800 mb-4 md:mb-0"
-                  provider="cloudinary"
-                  :src="podcast.imageUrl"
-                  :alt="podcast.alt"
-                  placeholder
-                />
-                <div class="min-w-0 flex-auto">
-                  <p
-                    class="text-base font-bold leading-6 text-neutral-900 dark:text-white"
-                  >
-                    {{ podcast.name }}
-                  </p>
-                  <p
-                    class="mt-1 text-sm leading-5 text-neutral-500 dark:text-neutral-300"
-                  >
-                    {{ podcast.episode }}
-                  </p>
+          <ul role="list" class="flex flex-col gap-y-6">
+            <li v-for="podcast in podcasts" :key="podcast.name">
+              <a
+                :href="podcast.link"
+                target="_blank"
+                class="bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl sm:rounded-full flex flex-col sm:flex-row sm:justify-between sm:items-center gap-x-6 py-5 px-4 focus-visible:border-neutral-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500"
+              >
+                <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
+                  <div class="flex justify-between mb-4 sm:mb-0">
+                    <nuxt-img
+                      class="h-12 w-12 flex-none rounded-full bg-neutral-50 dark:bg-neutral-800"
+                      provider="cloudinary"
+                      :src="podcast.imageUrl"
+                      :alt="podcast.alt"
+                      placeholder
+                    />
+
+                    <div class="sm:hidden shrink-0">
+                      <span class="sr-only">View podcast</span>
+                      <ArrowUpRightIcon
+                        class="w-6 h-6 text-neutral-900 dark:text-white"
+                      />
+                    </div>
+                  </div>
+                  <div class="min-w-0 flex-auto">
+                    <p
+                      class="text-base font-bold leading-6 text-neutral-900 dark:text-white"
+                    >
+                      {{ podcast.name }}
+                    </p>
+                    <p
+                      class="mt-1 text-sm leading-5 text-neutral-500 dark:text-neutral-300"
+                    >
+                      {{ podcast.episode }}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="mt-4 md:mt-0 shrink-0 flex flex-col md:items-end">
-                <a
-                  :href="podcast.link"
-                  target="_blank"
-                  class="rounded-md bg-white dark:bg-neutral-900 px-2.5 py-1.5 text-sm font-semibold text-neutral-900 dark:text-white ring-1 ring-neutral-300 hover:bg-neutral-50 dark:ring-neutral-700 dark:hover:bg-neutral-800 text-center"
-                  >View podcast<span class="sr-only">, {{ podcast.name }}</span>
-                </a>
-              </div>
+                <div class="shrink-0 hidden sm:block sm:pr-2">
+                  <span class="sr-only">View podcast</span>
+                  <ArrowUpRightIcon
+                    class="w-6 h-6 text-neutral-900 dark:text-white"
+                  />
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -82,6 +88,7 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowUpRightIcon } from "@heroicons/vue/24/outline";
 import { NAVIGATION } from "@/constants/navigation";
 
 const podcasts = [
