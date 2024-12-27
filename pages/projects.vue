@@ -25,7 +25,8 @@
             @click="goToProject(project)"
           >
             <NuxtImg
-              src="https://picsum.photos/600/400"
+              :src="project.imageUrl"
+              provider="cloudinary"
               class="rounded-xl w-full"
               :alt="project.name"
               placeholder
@@ -62,7 +63,7 @@ const projects: Project[] = [
     name: "Remind Day",
     description:
       "Remind Day is a browser extension that helps you achieve your goals by setting objectives and receiving reminders to track progress with check-ins.",
-    imageUrl: "/v1720893711/nuxt-blog/k7m1m33mttibipj7ccfi.png",
+    imageUrl: "/v1735259308/nuxt-blog/projects/pzhd7qypaxygzhs0szdx.png",
     alt: "Remind Day logo",
     link: "https://remindday.com/",
     tag: "active"
