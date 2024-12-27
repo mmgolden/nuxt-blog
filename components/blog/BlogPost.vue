@@ -1,6 +1,6 @@
 <template>
   <article
-    class="cursor-pointer flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl py-5 px-4 md:px-6"
+    class="group cursor-pointer flex flex-col items-start justify-between bg-white dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-3xl py-5 px-4 md:px-6"
     v-bind="$attrs"
     @click="goToPost"
   >
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="group relative">
+    <div class="relative">
       <!-- Title -->
       <h3
         class="mt-3 text-lg md:text-xl font-bold leading-normal text-neutral-900 group-hover:text-neutral-600 dark:text-white dark:group-hover:text-neutral-300"
