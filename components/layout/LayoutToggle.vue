@@ -68,9 +68,9 @@
   </Switch>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { Switch } from "@headlessui/vue";
-import { useTheme } from "@/composables/useTheme.ts";
+import { useTheme } from "@/composables/useTheme";
 
 const { isDarkTheme } = useTheme();
 </script>
