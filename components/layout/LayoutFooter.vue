@@ -1,17 +1,12 @@
 <template>
-  <footer class="bg-white dark:bg-neutral-950 mt-auto">
+  <footer class="bg-neutral-50 dark:bg-neutral-900 mt-auto">
     <div
-      class="mx-auto max-w-4xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
+      class="mx-auto max-w-3xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
     >
       <div class="flex flex-col md:flex-row items-center">
-        <!-- Toggle-->
-        <ClientOnly>
-          <LayoutToggle />
-        </ClientOnly>
-
         <!-- Copyright -->
         <p
-          class="text-center text-xs leading-5 mt-4 md:mt-0 md:ml-4 text-neutral-600 dark:text-neutral-300"
+          class="text-center text-sm leading-5 mt-4 md:mt-0 text-neutral-600 dark:text-neutral-300"
         >
           &copy; {{ currentYear }} Melinda Golden
         </p>
@@ -24,17 +19,21 @@
           :key="item.name"
           :href="item.href"
           target="_blank"
-          class="text-neutral-900 hover:text-neutral-600 dark:text-white dark:hover:text-neutral-300 rounded-md"
+          class="social-link rounded-full w-10 h-10 flex justify-center items-center text-neutral-900 dark:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-white/5 ring-1 ring-neutral-300 dark:ring-white/10 focus-visible:outline-cyan-500 focus:border-none"
         >
           <span class="sr-only">{{ item.name }}</span>
-          <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+          <component
+            :is="item.icon"
+            class="h-6 w-6 shrink-0"
+            aria-hidden="true"
+          />
         </a>
       </div>
     </div>
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { defineComponent, h } from "vue";
 
 const currentYear = new Date().getFullYear();
@@ -71,4 +70,8 @@ const navigation = [
 ];
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.social-link:last-child svg {
+  @apply w-5 h-5;
+}
+</style>

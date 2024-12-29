@@ -1,21 +1,15 @@
 <template>
   <NuxtLink
     to="/"
-    class="flex items-center -m-1.5 p-1.5 rounded-md"
+    class="flex items-center -m-1.5 p-1.5 rounded-full"
     @click="click"
   >
-    <nuxt-img
-      class="h-6 w-auto"
-      src="/svg/logo.svg"
-      alt="Melinda Golden Logo"
-    />
-    <span class="ml-2 text-base font-bold text-neutral-900 dark:text-white">
-      Melinda Golden
-    </span>
+    <NuxtImg class="h-9 w-auto" src="/svg/logo.svg" alt="Melinda Golden Logo" />
+    <span class="sr-only"> Melinda Golden </span>
   </NuxtLink>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const emit = defineEmits(["click"]);
 
 const click = () => emit("click");

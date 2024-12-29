@@ -9,8 +9,8 @@
   </div>
 </template>
 
-<script setup>
-import { useTheme } from "@/composables/useTheme.ts";
+<script setup lang="ts">
+import { useTheme } from "@/composables/useTheme";
 
 useTheme();
 </script>

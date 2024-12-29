@@ -14,8 +14,8 @@
       <template #title> Contact </template>
     </LayoutPageTitle>
 
-    <div class="py-20 bg-white dark:bg-neutral-950">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-900">
+      <div class="mx-auto max-w-3xl px-4 lg:px-8">
         <p
           class="mt-2 text-lg leading-8 text-neutral-600 dark:text-neutral-300"
         >
@@ -39,63 +39,31 @@
           >
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <!-- Name -->
-              <div class="sm:col-span-2">
-                <label
-                  for="name"
-                  class="block text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
-                >
-                  Full name
-                </label>
-                <div class="mt-2.5">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    autocomplete="name"
-                    required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
+              <BaseInput
+                label="Full name"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
 
               <!-- Email -->
-              <div class="sm:col-span-2">
-                <label
-                  for="email"
-                  class="block text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
-                >
-                  Email
-                </label>
-                <div class="mt-2.5">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autocomplete="email"
-                    required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
+              <BaseInput
+                label="Email"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+              />
 
               <!-- Message -->
-              <div class="sm:col-span-2">
-                <label
-                  for="message"
-                  class="block text-sm font-semibold leading-6 text-neutral-900 dark:text-white"
-                >
-                  Message
-                </label>
-                <div class="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="4"
-                    required
-                    class="block w-full rounded-md border-0 px-3.5 py-2 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white ring-1 ring-inset ring-neutral-300 dark:ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-cyan-700 dark:focus:ring-cyan-700 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
+              <BaseTextarea
+                label="Message"
+                name="message"
+                id="message"
+                required
+              />
 
               <!-- Hidden -->
               <input
@@ -113,13 +81,8 @@
               />
             </div>
 
-            <div class="mt-10">
-              <button
-                type="submit"
-                class="block w-full rounded-md bg-cyan-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
-              >
-                Send
-              </button>
+            <div class="mt-10 flex justify-end">
+              <BaseButton type="submit">Send message</BaseButton>
             </div>
           </form>
         </ClientOnly>
@@ -128,7 +91,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { VueReCaptcha, useReCaptcha } from "vue-recaptcha-v3";
 
@@ -137,12 +100,14 @@ const config = useRuntimeConfig();
 
 const token = ref("");
 
-vueApp.use(VueReCaptcha, {
+const { use } = vueApp as any;
+
+use(VueReCaptcha, {
   siteKey: config.public.recaptchaKey
 });
 
 onMounted(async () => {
-  const { executeRecaptcha, recaptchaLoaded } = useReCaptcha();
+  const { executeRecaptcha, recaptchaLoaded } = useReCaptcha() as any;
 
   await recaptchaLoaded();
 

@@ -6,8 +6,8 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
     "@nuxtjs/plausible",
-    "nuxt-simple-sitemap",
-    "nuxt-simple-robots"
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots"
   ],
 
   site: {
@@ -64,5 +64,7 @@ export default defineNuxtConfig({
     cloudinary: {
       baseURL: "https://res.cloudinary.com/melindagolden/image/upload/"
     }
-  }
+  },
+
+  compatibilityDate: "2024-12-22"
 });

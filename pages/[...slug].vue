@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="post">
     <!-- Meta -->
     <Head>
       <Title>{{ post.title }}</Title>
@@ -26,17 +26,16 @@
       </template>
     </BlogTitle>
 
-    <div class="bg-white dark:bg-neutral-950">
-      <article class="mx-auto max-w-4xl px-6 lg:px-8 py-20">
+    <div class="bg-neutral-50 dark:bg-neutral-900">
+      <article class="mx-auto max-w-3xl px-4 lg:px-8 pt-10 pb-10">
         <ContentDoc class="content" />
-
         <BlogAuthor />
       </article>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import dayjs from "dayjs";
 const { path } = useRoute();
 
@@ -51,7 +50,7 @@ const { data: post } = await useAsyncData(`content-${postPath}`, () => {
   return queryContent().where({ _path: postPath }).findOne();
 });
 
-const formatDate = (date) => {
+const formatDate = (date: string) => {
   return dayjs(date).format("MMMM D, YYYY");
 };
 </script>
@@ -80,27 +79,27 @@ const formatDate = (date) => {
 }
 
 .content h1 {
-  @apply text-4xl lg:text-5xl font-bold;
-}
-
-.content h2 {
   @apply text-3xl lg:text-4xl font-bold;
 }
 
-.content h3 {
+.content h2 {
   @apply text-2xl lg:text-3xl font-bold;
 }
 
-.content h4 {
+.content h3 {
   @apply text-xl lg:text-2xl font-bold;
 }
 
-.content h5 {
+.content h4 {
   @apply text-lg lg:text-xl font-bold;
 }
 
+.content h5 {
+  @apply text-base lg:text-lg font-bold;
+}
+
 .content h6 {
-  @apply text-lg font-bold;
+  @apply text-base font-bold;
 }
 
 .content p {
@@ -129,11 +128,11 @@ const formatDate = (date) => {
 }
 
 .content pre {
-  @apply mb-8 text-base bg-neutral-50 dark:bg-neutral-800 p-4 whitespace-pre-wrap border border-neutral-200 dark:border-neutral-700 rounded-md text-neutral-900 dark:text-white overflow-x-auto;
+  @apply mb-8 text-base bg-white dark:bg-neutral-800 p-4 whitespace-pre-wrap border border-neutral-200 dark:border-neutral-700 rounded-md text-neutral-900 dark:text-white overflow-x-auto;
 }
 
 .content p code {
-  @apply text-base bg-neutral-50 dark:bg-neutral-800 px-2 py-1 border border-neutral-200 dark:border-neutral-700 rounded-md text-neutral-900 dark:text-white;
+  @apply text-base bg-white dark:bg-neutral-800 px-2 py-1 border border-neutral-200 dark:border-neutral-700 rounded-md text-neutral-900 dark:text-white;
 }
 
 .content img {
