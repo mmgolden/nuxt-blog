@@ -15,18 +15,16 @@
       </h1>
       <div class="flex flex-col gap-4">
         <p class="text-lg text-neutral-600 dark:text-neutral-300">
-          Hey there! I'm a Senior Front-End Developer based in Asheville, NC. I
-          made the leap from being a wedding photographer to becoming a
-          self-taught software developer.
-        </p>
-        <p class="text-lg text-neutral-600 dark:text-neutral-300">
-          With over {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience, I've
-          worked with small companies and startups, creating performant,
-          accessible, and responsive web applications.
-        </p>
-        <p class="text-lg text-neutral-600 dark:text-neutral-300">
-          I'm currently employed full-time, but in my free time, I enjoy being
-          an indie-maker and sharing my journey of creating projects.
+          Hey there! I have over {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of
+          experience in front-end development. Currently, I work full-time as a
+          Senior Front End Developer. I'm also the founder of
+          <a
+            href="https://rootelementlabs.com/"
+            target="_blank"
+            class="underline text-neutral-800 dark:text-neutral-200"
+            >Root Element Labs</a
+          >. I offer part-time consulting services in front-end architecture and
+          design systems.
         </p>
       </div>
     </div>
