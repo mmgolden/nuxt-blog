@@ -12,11 +12,17 @@
     />
 
     <p class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2">
-      Hey there! I'm Melinda Golden, a Senior Front-End Developer with over
-      {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience. I have worked with
-      small companies and startups to build performant, accessible, and
-      responsive web applications. I enjoy being an indie maker and sharing my
-      journey of creating projects.
+      Hey there! I'm Melinda Golden. I have over
+      {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience in front-end
+      development. I currently work full-time as a Senior Front End Developer.
+      I'm also the founder of
+      <a
+        href="https://rootelementlabs.com/"
+        target="_blank"
+        class="underline text-neutral-800 dark:text-neutral-200"
+        >Root Element Labs</a
+      >. I offer part-time consulting services in front-end architecture and
+      design systems.
     </p>
   </div>
 </template>
