@@ -25,17 +25,11 @@
         />
 
         <p class="text">
-          Hello! I'm Melinda Golden, and I'm based out of Asheville, NC. I have
-          over {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience in
-          front-end development. I currently work full-time as a Senior Front
-          End Developer. I'm also the founder of
-          <a
-            href="https://rootelementlabs.com/"
-            target="_blank"
-            class="underline text-neutral-800 dark:text-neutral-200"
-            >Root Elements Labs</a
-          >. I offer part-time consulting for front-end architecture and design
-          systems.
+          Hello! I'm Melinda Golden. I'm a Senior Front End Developer based in
+          Asheville, NC. I have over
+          {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience in front-end
+          development. I specialize in using HTML, CSS, JavaScript, TypeScript,
+          and Vue.
         </p>
 
         <p class="text">

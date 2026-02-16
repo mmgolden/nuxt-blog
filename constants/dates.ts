@@ -1,3 +1,3 @@
 export const DATES = {
-  WORK_EXPERIENCE: "2016-12-31"
+  WORK_EXPERIENCE: "2016-01-01"
 };
