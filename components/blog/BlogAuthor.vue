@@ -12,17 +12,10 @@
     />
 
     <p class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2">
-      Hey there! I'm Melinda Golden. I have over
-      {{ timeFromNow(DATES.WORK_EXPERIENCE) }} of experience in front-end
-      development. I currently work full-time as a Senior Front End Developer.
-      I'm also the founder of
-      <a
-        href="https://rootelementlabs.com/"
-        target="_blank"
-        class="underline text-neutral-800 dark:text-neutral-200"
-        >Root Element Labs</a
-      >. I offer part-time consulting services in front-end architecture and
-      design systems.
+      I'm Melinda Golden, a Senior Front-End Developer based in Asheville, NC. I
+      enjoy working with HTML, CSS, JavaScript, TypeScript, and Vue. I've helped
+      small businesses and startups build web applications that are performant,
+      accessible, and responsive.
     </p>
   </div>
 </template>
