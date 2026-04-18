@@ -3,10 +3,7 @@
     <!-- Meta -->
     <Head>
       <Title>Speaking | Melinda Golden</Title>
-      <Meta
-        name="description"
-        content="Melinda Golden is a front-end developer based in Asheville, NC."
-      />
+      <Meta name="description" :content="META.DESCRIPTION" />
       <Link rel="canonical" href="https://melindagolden.com/speaking/" />
     </Head>
 
@@ -97,6 +94,7 @@
 <script setup lang="ts">
 import { ArrowUpRightIcon } from "@heroicons/vue/24/outline";
 import { NAVIGATION } from "@/constants/navigation";
+import { META } from "@/constants/meta";
 import type { Podcast } from "@/types";
 
 const podcasts: Podcast[] = [

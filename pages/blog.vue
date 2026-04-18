@@ -3,10 +3,7 @@
     <!-- Meta -->
     <Head>
       <Title>Blog | Melinda Golden</Title>
-      <Meta
-        name="description"
-        content="Melinda Golden is a front-end developer based in Asheville, NC."
-      />
+      <Meta name="description" :content="META.DESCRIPTION" />
       <Link rel="canonical" href="https://melindagolden.com/blog/" />
     </Head>
 
@@ -28,6 +25,7 @@
 </template>
 
 <script setup lang="ts">
+import { META } from "@/constants/meta";
 const { data: posts } = await useAsyncData("blog", () => {
   return queryContent("/")
     .where({ draft: { $eq: false } })
