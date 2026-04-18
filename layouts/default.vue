@@ -3,7 +3,6 @@
     <LayoutHeader />
     <main class="pt-16">
       <slot />
-      <LayoutNewsletter />
     </main>
     <LayoutFooter />
   </div>

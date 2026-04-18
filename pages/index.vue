@@ -3,19 +3,16 @@
     <!-- Meta -->
     <Head>
       <Title>Melinda Golden</Title>
-      <Meta
-        name="description"
-        content="Melinda Golden is a front-end developer based in Asheville, NC."
-      />
+      <Meta name="description" :content="META.DESCRIPTION" />
       <Link rel="canonical" href="https://melindagolden.com" />
     </Head>
 
     <HomeHero />
-
-    <HomePosts />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { META } from "@/constants/meta";
+</script>
 
 <style scoped></style>

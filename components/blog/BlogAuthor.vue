@@ -12,10 +12,10 @@
     />
 
     <p class="text-base md:text-lg text-neutral-600 dark:text-neutral-300 mt-2">
-      I'm Melinda Golden, a Senior Front-End Developer based in Asheville, NC. I
-      enjoy working with HTML, CSS, JavaScript, TypeScript, and Vue. I've helped
-      small businesses and startups build web applications that are performant,
-      accessible, and responsive.
+      Hi, I'm Melinda, an Independent Design Systems Engineer. I help product
+      teams build scalable component libraries and design systems that reduce
+      duplicate work, align design and engineering, and provide the structure to
+      ship faster and more consistently.
     </p>
   </div>
 </template>

@@ -3,10 +3,7 @@
     <!-- Meta -->
     <Head>
       <Title>Projects | Melinda Golden</Title>
-      <Meta
-        name="description"
-        content="Melinda Golden is a front-end developer based in Asheville, NC."
-      />
+      <Meta name="description" :content="META.DESCRIPTION" />
       <Link rel="canonical" href="https://melindagolden.com/projects/" />
     </Head>
 
@@ -56,6 +53,7 @@
 </template>
 
 <script setup lang="ts">
+import { META } from "@/constants/meta";
 import type { Project } from "@/types";
 
 const projects: Project[] = [

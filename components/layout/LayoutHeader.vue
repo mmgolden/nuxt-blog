@@ -90,10 +90,8 @@ const { y } = useWindowScroll();
 const mobileMenuOpen = ref(false);
 
 const navigation = [
+  { name: "Home", href: NAVIGATION.HOME },
   { name: "About", href: NAVIGATION.ABOUT },
-  { name: "Projects", href: NAVIGATION.PROJECTS },
-  { name: "Speaking", href: NAVIGATION.SPEAKING },
-  { name: "Blog", href: NAVIGATION.BLOG },
   { name: "Contact", href: NAVIGATION.CONTACT }
 ];
 </script>

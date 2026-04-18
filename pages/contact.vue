@@ -3,10 +3,7 @@
     <!-- Meta -->
     <Head>
       <Title>Contact | Melinda Golden</Title>
-      <Meta
-        name="description"
-        content="Melinda Golden is a front-end developer based in Asheville, NC."
-      />
+      <Meta name="description" :content="META.DESCRIPTION" />
       <Link rel="canonical" href="https://melindagolden.com/contact/" />
     </Head>
 
@@ -94,6 +91,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { VueReCaptcha, useReCaptcha } from "vue-recaptcha-v3";
+import { META } from "@/constants/meta";
 
 const { vueApp } = useNuxtApp();
 const config = useRuntimeConfig();
