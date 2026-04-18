@@ -7,6 +7,7 @@
       <Link rel="canonical" href="https://melindagolden.com" />
     </Head>
 
+    <!-- Hero -->
     <HomeHero />
   </div>
 </template>
