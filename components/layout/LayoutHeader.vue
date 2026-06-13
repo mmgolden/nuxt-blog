@@ -1,6 +1,6 @@
 <template>
   <header
-    class="z-40 bg-neutral-50 dark:bg-neutral-900 fixed top-0 left-0 right-0"
+    class="z-40 bg-stone-100 dark:bg-neutral-900 fixed top-0 left-0 right-0"
     :class="{ shadow: y > 70 }"
   >
     <nav
@@ -46,7 +46,7 @@
     >
       <div class="fixed inset-0 z-50" />
       <DialogPanel
-        class="bg-neutral-50 dark:bg-neutral-900 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
+        class="bg-stone-100 dark:bg-neutral-900 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-white/10"
       >
         <div class="flex items-center justify-between">
           <!-- Logo -->
@@ -90,8 +90,10 @@ const { y } = useWindowScroll();
 const mobileMenuOpen = ref(false);
 
 const navigation = [
-  { name: "Home", href: NAVIGATION.HOME },
   { name: "About", href: NAVIGATION.ABOUT },
+  { name: "Projects", href: NAVIGATION.PROJECTS },
+  { name: "Speaking", href: NAVIGATION.SPEAKING },
+  { name: "Blog", href: NAVIGATION.BLOG },
   { name: "Contact", href: NAVIGATION.CONTACT }
 ];
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-neutral-50 dark:bg-neutral-900 mt-auto">
+  <footer class="bg-stone-100 dark:bg-neutral-900 mt-auto">
     <div
       class="mx-auto max-w-3xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
     >
@@ -19,7 +19,7 @@
           :key="item.name"
           :href="item.href"
           target="_blank"
-          class="social-link rounded-full w-10 h-10 flex justify-center items-center text-neutral-900 dark:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-white/5 ring-1 ring-neutral-300 dark:ring-white/10 focus-visible:outline-cyan-500 focus:border-none"
+          class="social-link rounded-full w-10 h-10 flex justify-center items-center text-neutral-900 dark:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-stone-100 dark:bg-neutral-900 hover:bg-stone-200/50 dark:hover:bg-white/5 ring-1 ring-neutral-300 dark:ring-white/10 focus-visible:outline-cyan-500 focus:border-none"
         >
           <span class="sr-only">{{ item.name }}</span>
           <component

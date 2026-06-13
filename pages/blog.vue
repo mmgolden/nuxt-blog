@@ -11,7 +11,7 @@
       <template #title> Blog </template>
     </LayoutPageTitle>
 
-    <div class="pt-10 pb-10 bg-neutral-50 dark:bg-neutral-900">
+    <div class="pt-10 pb-10 bg-stone-100 dark:bg-neutral-900">
       <div class="mx-auto max-w-3xl px-4 lg:px-8">
         <BlogPost
           v-for="(post, index) in posts"

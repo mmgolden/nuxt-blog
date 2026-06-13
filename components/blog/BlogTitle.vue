@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-neutral-50 dark:bg-neutral-900">
+  <div class="bg-stone-100 dark:bg-neutral-900">
     <div class="mx-auto max-w-3xl pt-16 pb-10 px-4 lg:px-8">
       <!-- Title -->
       <h1

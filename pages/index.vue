@@ -9,6 +9,9 @@
 
     <!-- Hero -->
     <HomeHero />
+
+    <!-- Posts -->
+    <HomePosts />
   </div>
 </template>
 
