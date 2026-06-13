@@ -26,7 +26,7 @@
       </template>
     </BlogTitle>
 
-    <div class="bg-neutral-50 dark:bg-neutral-900">
+    <div class="bg-stone-100 dark:bg-neutral-900">
       <article class="mx-auto max-w-3xl px-4 lg:px-8 pt-10 pb-10">
         <ContentDoc class="content" />
         <BlogAuthor />
@@ -103,7 +103,7 @@ const formatDate = (date: string) => {
 }
 
 .content p {
-  @apply leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-600 dark:text-neutral-300;
+  @apply leading-relaxed lg:leading-loose text-lg mb-6 lg:mb-8 text-neutral-700 dark:text-neutral-300;
 }
 
 .content blockquote {
@@ -116,7 +116,7 @@ const formatDate = (date: string) => {
 }
 
 .content li {
-  @apply text-neutral-600 dark:text-neutral-300 mb-2;
+  @apply text-neutral-700 dark:text-neutral-300 mb-2 text-lg;
 }
 
 .content ol {

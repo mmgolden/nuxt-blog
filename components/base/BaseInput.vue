@@ -2,7 +2,7 @@
   <div class="sm:col-span-2">
     <label
       :for="id"
-      class="ml-px block pl-4 text-base text-neutral-900 dark:text-white"
+      class="ml-px block pl-4 text-base font-semibold text-neutral-900 dark:text-white"
     >
       {{ label }}
     </label>
